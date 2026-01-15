@@ -1,0 +1,116 @@
+name: social-insight-workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  run-mock:
+    # PRs (especially from forks) typically don't have access to repo Variables/Secrets.
+    # Keep PR verification cheap and reliable.
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate workflow YAML
+        run: |
+          python .github/skills/maf-decalarative-yaml/scripts/validate_maf_workflow_yaml.py workflows/social_insight_workflow.yaml
+
+      - name: Run workflow (mock agents)
+        env:
+          RUN_OUT: output/ci-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          cd generated/social_insight_workflow
+          python run.py --non-interactive --mock-agents --set Local.RunOutputDir=${RUN_OUT}
+          echo "Wrote outputs to ${RUN_OUT}"
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-insight-output
+          path: |
+            output/ci-${{ github.run_id }}-${{ github.run_attempt }}/
+            output/ci-${{ github.run_id }}-${{ github.run_attempt }}/report.md
+          if-no-files-found: error
+
+  run-azure-ai:
+    # Default: run on push to main and on manual dispatch.
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          # Prefer GitHub Repository Variables (vars) to allow 0 secrets in a lab.
+          # Fallback to secrets for teams who prefer secrets.
+          client-id: ${{ vars.AZURE_CLIENT_ID || secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID || secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID || secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Create/reuse Foundry agents and write id map
+        env:
+          AZURE_AI_PROJECT_ENDPOINT: ${{ vars.AZURE_AI_PROJECT_ENDPOINT || secrets.AZURE_AI_PROJECT_ENDPOINT }}
+          AZURE_AI_MODEL_DEPLOYMENT_NAME: ${{ vars.AZURE_AI_MODEL_DEPLOYMENT_NAME || secrets.AZURE_AI_MODEL_DEPLOYMENT_NAME || 'gpt-5-mini' }}
+        run: |
+          python .github/skills/maf-agent-create/scripts/create_agents_from_workflow.py \
+            --workflow workflows/social_insight_workflow.yaml \
+            --spec generated/social_insight_workflow/agents.yaml \
+            --write-id-map generated/social_insight_workflow/agent_id_map.json
+
+      - name: Run workflow (Azure AI)
+        env:
+          AZURE_AI_PROJECT_ENDPOINT: ${{ vars.AZURE_AI_PROJECT_ENDPOINT || secrets.AZURE_AI_PROJECT_ENDPOINT }}
+          AZURE_AI_MODEL_DEPLOYMENT_NAME: ${{ vars.AZURE_AI_MODEL_DEPLOYMENT_NAME || secrets.AZURE_AI_MODEL_DEPLOYMENT_NAME || 'gpt-5-mini' }}
+          RUN_OUT: output/ci-azure-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          cd generated/social_insight_workflow
+          python run.py --non-interactive --azure-ai --set Local.RunOutputDir=${RUN_OUT}
+          echo "Wrote outputs to ${RUN_OUT}"
+
+      - name: Upload outputs (Azure)
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-insight-output-azure
+          path: |
+            output/ci-azure-${{ github.run_id }}-${{ github.run_attempt }}/
+            output/ci-azure-${{ github.run_id }}-${{ github.run_attempt }}/report.md
+          if-no-files-found: error

@@ -1,0 +1,14 @@
+# Core runtime
+agent-framework
+agent-framework-azure-ai --pre
+
+# Azure SDK
+azure-identity
+azure-ai-projects
+azure-core
+
+# Utilities
+python-dotenv
+PyYAML
+httpx
+openai

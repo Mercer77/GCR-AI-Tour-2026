@@ -13,7 +13,7 @@
 
 ## 工作流架构
 
-```
+```text
 [多平台 APIs]
     ↓
 SignalIngestionAgent (LocalToolExecutorAgent - 确定性工具)
@@ -55,391 +55,218 @@ ContentStrategyAgent (决策转译 Agent)
 
 #### 4️⃣ ContentStrategyAgent
 
-- **类型**: 决策转译 Agent
 - **职责**: 把洞察翻译成「不同平台该不该追、怎么追、追到什么程度」
 - **输入**: `hotspots.json` + `insights.json`
 - **输出**: `report.md`
 
-## 快速开始
+## Hands-on Lab：用 Azure 订阅在 GitHub Actions 跑通
 
-### 端到端测试（推荐先运行）
+目标：让学员用自己的 Azure 订阅 + 自己 fork 的仓库，在 GitHub Actions 上自动跑通本工作流（真实 Azure AI Foundry Agents）。
 
-最快的方式是运行自动化测试脚本：
+你将得到：
+- GitHub Actions 每次 push 到 `main` 自动生成的报告 `report.md`
+- 可下载的完整输出目录（Artifacts）
+
+本仓库已内置：
+- GitHub Actions workflow：`.github/workflows/social_insight_workflow.yml`
+- 一键 OIDC + 变量配置脚本：`scripts/setup_github_actions_oidc.sh` / `scripts/setup_github_actions_oidc.ps1`
+- 本地依赖安装脚本：`scripts/install_deps.sh` / `scripts/install_deps.ps1`
+
+## 最短路径（推荐）：脚本一键配置 + push 即跑
+
+这个路径尽量避免手动点 Portal；但有一件事目前仍需要你在 Foundry Portal 先做：创建 Project 并拿到 Project endpoint。
+
+### 0) Fork 仓库
+
+在 GitHub 上 fork 本仓库到你自己的账号（后续 OIDC 绑定的是你 fork 后的 `owner/repo`）。
+
+### 0.5) Clone 到本地（必做一次）
+
+在你自己的电脑上把 fork 后的仓库 clone 下来：
 
 ```bash
-# Mock 模式（无需 Azure 认证，使用本地工具）
-./scripts/test_e2e.sh mock
-
-# 或使用 Python 版本
-python scripts/test_e2e.py --mode mock
+git clone https://github.com/<your-github-user>/gcr-ai-tour.git
+cd gcr-ai-tour
 ```
 
-测试会自动执行所有步骤并验证输出。详见 [测试指南](#测试和验证)。
+说明：
+- 下面的脚本会优先从本地 `git remote` 自动推断 `owner/repo`，所以建议从仓库根目录运行。
 
-### 前置要求
+### 0.6) 环境初始化（本地一次，推荐）
+
+这一步的目标：把“跑脚本需要的 CLI + Python 依赖”准备好。
+
+Linux（Debian/Ubuntu，推荐）：
 
 ```bash
-# 安装 Python 3.8+
-python3 --version
+./scripts/install_deps.sh
 
-# 安装 Microsoft Agent Framework
-pip install agent-framework
+# 如果你只想装 Python 依赖（不碰 az/gh）：
+# ./scripts/install_deps.sh --python-only
+```
 
-# （可选）Azure AI Foundry 认证
+说明：
+- `install_deps.sh` 会在检测到 `apt-get` 时，尝试安装 Azure CLI（`az`）和 GitHub CLI（`gh`），然后创建 `.venv` 并安装 `requirements.txt`。
+- 如果你不是 Debian/Ubuntu（没有 `apt-get`），脚本会跳过 CLI 安装并提示安装链接；你仍可以继续用它安装 Python 依赖。
+
+Windows（PowerShell，推荐）：
+
+```powershell
+# 允许当前会话执行本地脚本（不改系统全局策略）
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+./scripts/install_deps.ps1
+
+# 只装 Python 依赖（不安装 az/gh）：
+# ./scripts/install_deps.ps1 -PythonOnly
+```
+
+说明：
+- `install_deps.ps1` 会优先用 `winget` 安装 `az`/`gh`（可选），并创建 `.venv` 安装 Python 依赖。
+
+### 1)（必须）在 Azure AI Foundry Portal 创建 Project + 模型部署
+
+1. 打开 https://ai.azure.com
+2. 创建一个 Project（按向导完成即可）
+3. 在 Project 内创建/选择一个模型部署（Deployment）
+   - 默认部署名推荐：`gpt-5-mini`（CI 默认值就是它）
+4. 从 Project 详情页/设置页复制 `AZURE_AI_PROJECT_ENDPOINT`
+   - 形如：`https://<your-foundry-resource>.services.ai.azure.com/api/projects/<your-project>`
+
+说明：
+- 学员不需要手工创建每个 Agent。本工作流会在 CI 运行时按名称创建/复用 agents，并写入 `generated/social_insight_workflow/agent_id_map.json`。
+
+### 2)（推荐）本地运行脚本：配置 Azure OIDC + 自动写入 GitHub Variables
+
+前置条件：
+- 已完成上一步“环境初始化”（推荐）
+- 或者你已自行安装并能使用：Azure CLI（`az`）与（可选）GitHub CLI（`gh`）
+
+如果你还没装这些 CLI：
+- Azure CLI： https://learn.microsoft.com/cli/azure/install-azure-cli
+- GitHub CLI： https://cli.github.com/
+
+Windows（推荐用 `winget`）：
+
+```powershell
+winget install -e --id Git.Git
+winget install -e --id Microsoft.AzureCLI
+winget install -e --id GitHub.cli
+```
+
+在你 fork 的仓库本地 clone 后（或 Codespaces / Dev Container 中），执行：
+
+```bash
 az login
+gh auth login
+
+# 推荐：将权限收窄到资源组（resource group）
+./scripts/setup_github_actions_oidc.sh \
+  --branch main \
+  --resource-group <your-rg> \
+  --configure-github \
+  --ai-project-endpoint "https://<your-foundry-resource>.services.ai.azure.com/api/projects/<your-project>"
+
+# 如你的模型部署名不是 gpt-5-mini，再额外传：
+#   --ai-model-deployment-name "<your-model-deployment>"
 ```
 
-### Azure 认证配置
+Windows PowerShell 等价命令（功能一致）：
 
-本项目支持多种认证方式，**推荐在 Azure 环境中使用 Managed Identity**。详细配置指南请参阅：
-
-📖 **[Azure 认证配置指南](AZURE_CREDENTIALS.md)**
-
-#### 快速配置（Managed Identity - 推荐生产环境）
-
-在 Azure VM、Container、App Service 等环境中，Managed Identity 会自动检测和使用：
-
-```bash
-# 1. 在 Azure 资源上启用 Managed Identity
-az vm identity assign --name "your-vm" --resource-group "your-rg"
-
-# 2. 授予权限
-az role assignment create \
-    --assignee <managed-identity-principal-id> \
-    --role "Cognitive Services User" \
-    --scope /subscriptions/{sub-id}/resourceGroups/{rg}
-
-# 3. 设置环境变量（仅需端点和模型）
-export AZURE_AI_PROJECT_ENDPOINT=https://your-project.api.azureml.ms
-export AZURE_AI_MODEL_DEPLOYMENT_NAME=gpt-4
-
-# 4. 运行 - 无需 az login！
-./scripts/test_e2e.sh azure
-```
-
-#### 快速配置（Azure CLI - 本地开发）
-
-```bash
-# 1. Azure CLI 登录
+```powershell
 az login
+gh auth login
 
-# 2. 配置环境变量
-cp .env.example .env
-# 编辑 .env 文件，填入你的 Azure 信息
-# AZURE_AI_PROJECT_ENDPOINT=https://your-project.api.azureml.ms
-# AZURE_AI_MODEL_DEPLOYMENT_NAME=gpt-4
-
-# 3. 运行测试
-./scripts/test_e2e.sh azure
+./scripts/setup_github_actions_oidc.ps1 \
+  -Branch main \
+  -ResourceGroup <your-rg> \
+  -ConfigureGitHub \
+  -AiProjectEndpoint "https://<your-foundry-resource>.services.ai.azure.com/api/projects/<your-project>"
 ```
 
-**认证优先级**:
-1. **Managed Identity** (在 Azure 环境中自动使用)
-2. Azure CLI credentials (`az login`)
-3. 环境变量 (Service Principal)
-4. Azure Key Vault (企业场景)
+脚本会自动完成：
+- 创建/复用 Entra App + Service Principal
+- 创建 Federated Credential（GitHub Actions OIDC，限定 `main` 分支）
+- 为该 SP 分配 RBAC（默认 `Cognitive Services User`，作用域默认建议用资源组）
+- 自动写入 GitHub Actions Variables（不需要 secrets）
 
-### 步骤 1: 配置热点 API
+### 3) push 到 main，GitHub Actions 自动跑真实 Azure AI
 
-编辑 `config/hot_api_list.json` 配置你的平台 API：
+从此开始：
+- push 到 `main` → 自动跑真实 Azure AI（会消耗额度）
+- PR → 只跑 mock（更便宜，且 fork PR 通常拿不到变量/权限）
 
-```json
-{
-  "platforms": [
-    {
-      "name": "weibo",
-      "endpoint": "https://api.weibo.com/hot/trending",
-      "enabled": true
-    }
-  ]
-}
-```
+运行结束后：
+- GitHub → Actions → 进入该 run → Artifacts 下载 `report.md` 和完整 output
 
-### 步骤 2: 验证工作流 YAML
+## 备选路径：不用 GitHub CLI（仍然尽量少点 Portal）
+
+如果你不想装 `gh`：
+
+1. 仍建议用脚本完成 Azure 侧 OIDC（需要 `az login`）：
 
 ```bash
-python .github/skills/maf-decalarative-yaml/scripts/validate_maf_workflow_yaml.py \
-  workflows/social_insight_workflow.yaml
+./scripts/setup_github_actions_oidc.sh --branch main --resource-group <your-rg>
 ```
 
-### 步骤 3: 生成可执行 Runner
+2. 然后在 GitHub 仓库 UI 手动配置 Variables：
+
+Settings → Secrets and variables → Actions → Variables
+
+必填：
+- `AZURE_CLIENT_ID`
+- `AZURE_TENANT_ID`
+- `AZURE_SUBSCRIPTION_ID`
+- `AZURE_AI_PROJECT_ENDPOINT`
+
+可选：
+- `AZURE_AI_MODEL_DEPLOYMENT_NAME`（不填则默认 `gpt-5-mini`）
+
+## 本地验证（可选）：先跑 mock 再上云
+
+如果你希望先本地确认工作流链路没问题：
 
 ```bash
-python .github/skills/maf-workflow-gen/scripts/generate_executable_workflow.py \
-  --in workflows/social_insight_workflow.yaml \
-  --out generated/social_insight_runner \
-  --force
-```
-
-### 步骤 4: 创建 Azure AI Foundry Agents（可选）
-
-如果要使用真实的 LLM Agent 而非 mock：
-
-```bash
-# 生成 agent spec
-python .github/skills/maf-agent-create/scripts/create_agents_from_workflow.py \
-  --workflow workflows/social_insight_workflow.yaml \
-  --write-spec generated/social_insight_runner/agents.yaml
-
-# 创建/复用 Foundry agents
-python .github/skills/maf-agent-create/scripts/create_agents_from_workflow.py \
-  --workflow workflows/social_insight_workflow.yaml \
-  --model-deployment-name "$AZURE_AI_MODEL_DEPLOYMENT_NAME" \
-  --spec generated/social_insight_runner/agents.yaml \
-  --write-id-map generated/social_insight_runner/agent_id_map.json
-```
-
-### 步骤 5: 运行工作流
-
-#### 选项 A: Mock 模式（快速验证）
-
-```bash
-cd generated/social_insight_runner
+./scripts/install_deps.sh --python-only
+cp .env.sample .env
+cd generated/social_insight_workflow
 python run.py --non-interactive --mock-agents
 ```
 
-#### 选项 B: Azure AI Foundry 真实调用
+Windows PowerShell：
 
-```bash
-cd generated/social_insight_runner
-python run.py \
-  --non-interactive \
-  --azure-ai \
-  --azure-ai-model-deployment-name "$AZURE_AI_MODEL_DEPLOYMENT_NAME" \
-  --azure-ai-agent-id-map-json agent_id_map.json
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+./scripts/install_deps.ps1 -PythonOnly
+Copy-Item .env.sample .env
+Set-Location generated/social_insight_workflow
+python run.py --non-interactive --mock-agents
 ```
 
-## 输出文件结构
+## 常见问题（排障最短路径）
 
-```
-generated/social_insight_output/
-├── raw_signals.json          # 原始信号数据
-├── signals/                  # 各平台信号
-│   ├── weibo.json
-│   ├── douyin.json
-│   └── zhihu.json
-├── clusters/
-│   └── hotspots.json         # 聚类后的热点
-├── insights/
-│   └── insights.json         # 社会洞察分析
-└── report.md                 # 最终策略报告
-```
+### 1) GitHub Actions 里 Azure 登录失败
 
-## 数据契约
+- 确认 workflow 顶层有 `permissions: id-token: write`
+- 确认 Entra App 有 Federated Credential，subject 绑定的是你 fork 的仓库与分支：
+  - `repo:<your-github-user>/<your-repo>:ref:refs/heads/main`
 
-### RawSignal（原始信号）
+### 2) 401/403（没权限）
 
-```json
-{
-  "signal_id": "weibo_1",
-  "platform": "weibo",
-  "rank": 3,
-  "title": "关键词",
-  "metrics": { "views": 123456 },
-  "url": "...",
-  "fetched_at": "ISO8601"
-}
-```
+- 确认已给 Service Principal 分配 RBAC：`Cognitive Services User`
+- 如果你把 scope 收窄到资源组，请确保 Foundry 相关资源也在该资源组范围内
 
-### Hotspot（热点）
+### 3) 找不到模型部署 / 模型名不对
 
-```json
-{
-  "hotspot_id": "H1",
-  "title": "一句话概括",
-  "summary": "发生了什么",
-  "signals": ["signal_id_1", "signal_id_7"],
-  "platforms": ["weibo", "douyin"],
-  "heat_score": 0.87,
-  "should_chase": true
-}
-```
+- 默认部署名：`gpt-5-mini`
+- 如果你的部署名不同，设置 GitHub Variable：`AZURE_AI_MODEL_DEPLOYMENT_NAME`
 
-### Insight（洞察）
+## 附录：实现与文件索引
 
-```json
-{
-  "hotspot_id": "H1",
-  "why_now": "触发机制 / 社会背景",
-  "core_audience": ["群体A", "群体B"],
-  "emotion_structure": {
-    "dominant": "愤怒",
-    "secondary": ["焦虑", "戏谑"]
-  },
-  "content_nature": ["冲突型", "身份认同"],
-  "risk_notes": ["争议风险", "平台审核点"]
-}
-```
-
-## 测试和验证
-
-### 自动化端到端测试
-
-项目提供了完整的端到端测试脚本：
-
-#### Bash 版本
-
-```bash
-# Mock 模式（推荐首次运行）
-./scripts/test_e2e.sh mock
-
-# Azure AI 模式（需要认证）
-./scripts/test_e2e.sh azure
-```
-
-#### Python 版本
-
-```bash
-# Mock 模式
-python scripts/test_e2e.py --mode mock
-
-# Azure AI 模式（带详细输出）
-python scripts/test_e2e.py --mode azure --verbose
-```
-
-测试脚本会自动：
-1. ✅ 验证 Python 环境
-2. ✅ 检查必需文件
-3. ✅ 验证工作流 YAML
-4. ✅ 测试工具注册表
-5. ✅ 生成可执行 runner
-6. ✅ 检查 Azure 认证（azure 模式）
-7. ✅ 运行完整工作流
-8. ✅ 验证所有输出文件
-
-### 测试场景
-
-#### Mock 模式
-- **用途**: 快速验证工作流逻辑
-- **特点**: 不调用 LLM，使用确定性 fallback 工具
-- **速度**: 快（约 10-30 秒）
-- **成本**: 免费
-
-#### Azure AI 模式
-- **用途**: 测试真实 LLM 集成
-- **特点**: 调用 Azure AI Foundry agents
-- **速度**: 较慢（约 2-5 分钟）
-- **成本**: 消耗 Azure tokens
-
-### 查看测试结果
-
-测试成功后，查看生成的报告：
-
-```bash
-# 查看完整报告
-cat generated/social_insight_output/report.md
-
-# 查看热点聚类
-cat generated/social_insight_output/clusters/hotspots.json
-
-# 查看社会洞察
-cat generated/social_insight_output/insights/insights.json
-```
-
-## 本地工具测试
-
-测试共享工具注册表：
-
-```bash
-# 列出所有工具
-python .github/skills/maf-shared-tools/scripts/call_shared_tool.py --tool __list__
-
-# 测试信号采集
-python .github/skills/maf-shared-tools/scripts/call_shared_tool.py \
-  --tool social.ingest_signals \
-  --args-json '{"hot_api_list_path":"config/hot_api_list.json","output_dir":"generated/test","time_window_hours":24}'
-
-# 测试聚类兜底
-python .github/skills/maf-shared-tools/scripts/call_shared_tool.py \
-  --tool social.cluster_signals_fallback \
-  --args-json '{"raw_signals_path":"generated/test/raw_signals.json","output_dir":"generated/test","top_k":5}'
-```
-
-## 扩展性
-
-这个设计是**通用型**的，稍作替换即可应用于其他场景：
-
-| 场景     | signals | hotspots | insights  | strategy |
-|--------|---------|----------|-----------|----------|
-| 社交洞察   | 热点信号    | 核心热点     | 社会洞察      | 内容策略     |
-| 投资研究   | 新闻/财报   | 核心事件     | 成因/风险     | 投资建议     |
-| 舆情监测   | 舆论      | 舆情主题     | 情绪/人群     | 公关策略     |
-| 技术趋势分析 | GitHub  | 技术方向     | 成熟度/人群    | 研发决策     |
-
-**Agent 角色不变，只换工具和 prompt。**
-
-## 设计说明
-
-### 关于 Fallback 执行策略
-
-当前实现中，每个 LLM Agent 步骤都会**无条件执行 fallback 工具**。这是为了：
-
-1. **演示目的**: 确保 mock 模式下能生成完整输出
-2. **鲁棒性**: 保证即使 LLM 失败也有有效输出
-3. **可预测性**: 统一的执行路径便于调试和测试
-
-**生产环境优化建议**:
-- 在工作流 YAML 中添加 `ConditionGroup` 判断 LLM 输出有效性
-- 仅在 LLM 失败或输出无效时才调用 fallback
-- 可以通过检查输出的 JSON 结构或特定字段来判断成功与否
-
-### 关于中文内容
-
-本工作流专门针对中国社交平台（微博、抖音、知乎等）设计，因此：
-- 工作流消息、报告内容使用中文
-- 数据契约字段名使用英文（便于编程处理）
-- Agent 指令混合中英文（英文结构定义，中文任务说明）
-
-如需国际化版本，建议：
-- 提取所有文本到配置文件
-- 使用模板系统支持多语言
-- Agent 指令完全使用英文
-
-## 故障排查
-
-### YAML 无法加载
-
-- 检查缩进（使用空格，不用 Tab）
-- 确保根节点是 `kind: Workflow`
-- 确保有 `trigger.actions`
-
-### Runner 在 --non-interactive 模式下失败
-
-- 确保通过 `--set` 提供了所有必需的 `Question` 变量
-
-### Foundry 错误 (401/403)
-
-- 运行 `az login`
-- 检查 RBAC 权限
-- 验证 `AZURE_AI_MODEL_DEPLOYMENT_NAME` 和 `AZURE_AI_PROJECT_ENDPOINT`
-- 详见 [Azure 认证配置指南](AZURE_CREDENTIALS.md)
-
-### 工具未找到
-
-- 检查 `shared_tools/maf_shared_tools_registry.py` 是否正确加载
-- 运行 `python shared_tools/maf_shared_tools_registry.py` 查看已注册工具
-
-### 端到端测试失败
-
-- 运行 `./scripts/test_e2e.sh mock` 查看详细错误
-- 检查所有必需文件是否存在
-- 确保 Python 3.8+ 已安装
-
-## 文档索引
-
-- **[README.md](README.md)** - 本文档：架构说明、快速开始
-- **[EXAMPLES.md](EXAMPLES.md)** - 详细使用示例和测试步骤
-- **[AZURE_CREDENTIALS.md](AZURE_CREDENTIALS.md)** - Azure 认证配置完整指南
-- **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - 技术实现细节
-
-## 许可证
-
-本项目遵循 MIT 许可证。
-
-## 参考资料
-
-- [Microsoft Agent Framework 文档](https://learn.microsoft.com/agent-framework/overview/agent-framework-overview)
-- [Microsoft Agent Framework Python](https://github.com/microsoft/agent-framework/tree/main/python)
-- [MAF Python 示例](https://github.com/microsoft/agent-framework/tree/main/python/samples)
-- [Azure AI Foundry Portal](https://ai.azure.com)
-- [Azure CLI 文档](https://docs.microsoft.com/cli/azure/)
+- 工作流 YAML：`workflows/social_insight_workflow.yaml`
+- 生成的可执行 runner：`generated/social_insight_workflow/run.py`
+- Agents spec / id map：
+  - `generated/social_insight_workflow/agents.yaml`
+  - `generated/social_insight_workflow/agent_id_map.json`
+- 输出目录：`output/<timestamp>/report.md`

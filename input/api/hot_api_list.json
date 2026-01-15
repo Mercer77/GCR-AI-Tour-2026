@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "抖音热搜",
+    "platform": "douyin",
+    "source": "xxapi",
+    "url": "https://v2.xxapi.cn/api/douyinhot"
+  },
+  {
+    "id": 2,
+    "name": "微博热搜",
+    "platform": "weibo",
+    "source": "xxapi",
+    "url": "https://v2.xxapi.cn/api/weibohot"
+  },
+  {
+    "id": 3,
+    "name": "百度热搜",
+    "platform": "baidu",
+    "source": "xxapi",
+    "url": "https://v2.xxapi.cn/api/baiduhot"
+  },
+  {
+    "id": 4,
+    "name": "CSDN热搜",
+    "platform": "csdn",
+    "source": "xxapi",
+    "url": "https://v2.xxapi.cn/api/csdnhot"
+  },
+  {
+    "id": 5,
+    "name": "36Kr热榜",
+    "platform": "36kr",
+    "source": "xxapi",
+    "url": "https://v2.xxapi.cn/api/hot36kr"
+  },
+  {
+    "id": 6,
+    "name": "B站热搜",
+    "platform": "bilibili",
+    "source": "xxapi",
+    "url": "https://v2.xxapi.cn/api/bilibilihot"
+  },
+  {
+    "id": 7,
+    "name": "知乎热榜",
+    "platform": "zhihu",
+    "source": "pearktrue",
+    "url": "https://api.pearktrue.cn/api/dailyhot/?title=知乎"
+  },
+  {
+    "id": 8,
+    "name": "澎湃新闻热榜",
+    "platform": "thepaper",
+    "source": "pearktrue",
+    "url": "https://api.pearktrue.cn/api/dailyhot/?title=澎湃新闻"
+  },
+  {
+    "id": 9,
+    "name": "今日头条热榜",
+    "platform": "toutiao",
+    "source": "pearktrue",
+    "url": "https://api.pearktrue.cn/api/dailyhot/?title=今日头条"
+  },
+  {
+    "id": 10,
+    "name": "腾讯新闻热榜",
+    "platform": "tencent",
+    "source": "pearktrue",
+    "url": "https://api.pearktrue.cn/api/dailyhot/?title=腾讯新闻"
+  },
+  {
+    "id": 11,
+    "name": "稀土掘金热榜",
+    "platform": "juejin",
+    "source": "pearktrue",
+    "url": "https://api.pearktrue.cn/api/dailyhot/?title=稀土掘金"
+  },
+  {
+    "id": 12,
+    "name": "少数派热榜",
+    "platform": "sspai",
+    "source": "pearktrue",
+    "url": "https://api.pearktrue.cn/api/dailyhot/?title=少数派"
+  }
+]
