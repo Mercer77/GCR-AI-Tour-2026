@@ -2,18 +2,147 @@
 name: Tech Insight Workflow
 on:
   workflow_dispatch:
+strict: false
 permissions:
-  contents: write
+  contents: read
 tools:
-  - Lab-01-Tech-Insights/mcp-scripts/tech_read_source_list.py
-  - Lab-01-Tech-Insights/mcp-scripts/tech_fetch_all_to_disk.py
-  - Lab-01-Tech-Insights/mcp-scripts/tech_load_articles_from_disk.py
-  - Lab-01-Tech-Insights/mcp-scripts/tech_cluster_or_fallback.py
-  - Lab-01-Tech-Insights/mcp-scripts/tech_insight_or_fallback.py
-  - Lab-01-Tech-Insights/mcp-scripts/tech_render_report_or_fallback.py
-  - Lab-01-Tech-Insights/mcp-scripts/write_text_file.py
+  bash: [":*"]
+  edit:
 engine: copilot
-network: true
+network:
+  allowed:
+    - defaults
+    - python
+mcp-scripts:
+  tech-read-source-list:
+    description: "Read RSS source list configuration"
+    inputs:
+      source_list_path:
+        type: string
+        required: true
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      echo "{\"source_list_path\": \"$INPUT_SOURCE_LIST_PATH\"}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_read_source_list.py
+  tech-fetch-all-to-disk:
+    description: "Fetch all sources to disk in parallel"
+    inputs:
+      source_list_path:
+        type: string
+        required: true
+      signals_dir:
+        type: string
+        required: true
+      timeout_seconds:
+        type: number
+        default: 15
+      max_chars:
+        type: number
+        default: 200000
+      max_items_per_source:
+        type: number
+        default: 25
+    timeout: 300
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      python3 -c "
+      import json, sys
+      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
+      from tech_insight_tools import tech_fetch_all_to_disk
+      result = tech_fetch_all_to_disk(
+          source_list_path='$INPUT_SOURCE_LIST_PATH',
+          signals_dir='$INPUT_SIGNALS_DIR',
+          timeout_seconds=int('${INPUT_TIMEOUT_SECONDS:-15}'),
+          max_chars=int('${INPUT_MAX_CHARS:-200000}'),
+          max_items_per_source=int('${INPUT_MAX_ITEMS_PER_SOURCE:-25}')
+      )
+      print(json.dumps(result, ensure_ascii=False, default=str))
+      "
+  tech-load-articles-from-disk:
+    description: "Load and filter valid articles from disk"
+    inputs:
+      signals_dir:
+        type: string
+        required: true
+      source_list_path:
+        type: string
+        required: true
+      max_items_per_source:
+        type: number
+        default: 25
+      time_window_hours:
+        type: number
+        default: 24
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      python3 -c "
+      import json, sys
+      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
+      from tech_insight_tools import tech_load_articles_from_disk
+      result = tech_load_articles_from_disk(
+          signals_dir='$INPUT_SIGNALS_DIR',
+          source_list_path='$INPUT_SOURCE_LIST_PATH',
+          max_items_per_source=int('${INPUT_MAX_ITEMS_PER_SOURCE:-25}'),
+          time_window_hours=int('${INPUT_TIME_WINDOW_HOURS:-24}')
+      )
+      print(json.dumps(result, ensure_ascii=False, default=str))
+      "
+  tech-cluster-or-fallback:
+    description: "Validate and fallback clustering results"
+    inputs:
+      raw_signals_json:
+        type: string
+        required: true
+      clusters_json:
+        type: string
+        required: true
+      top_k:
+        type: number
+        default: 12
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      echo "{\"raw_signals_json\": $(echo $INPUT_RAW_SIGNALS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"top_k\": ${INPUT_TOP_K:-12}}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_cluster_or_fallback.py
+  tech-insight-or-fallback:
+    description: "Validate and fallback insight results"
+    inputs:
+      clusters_json:
+        type: string
+        required: true
+      insights_json:
+        type: string
+        required: true
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      echo "{\"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"insights_json\": $(echo $INPUT_INSIGHTS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))') }" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_insight_or_fallback.py
+  tech-render-report-or-fallback:
+    description: "Validate and fallback report rendering"
+    inputs:
+      clusters_json:
+        type: string
+        required: true
+      insights_json:
+        type: string
+        required: true
+      draft_markdown:
+        type: string
+        required: true
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      echo "{\"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"insights_json\": $(echo $INPUT_INSIGHTS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"draft_markdown\": $(echo $INPUT_DRAFT_MARKDOWN | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))')}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_render_report_or_fallback.py
+  write-text-file:
+    description: "Write text content to a file"
+    inputs:
+      path:
+        type: string
+        required: true
+      text:
+        type: string
+        required: true
+      overwrite:
+        type: boolean
+        default: true
+    run: |
+      cd "$GITHUB_WORKSPACE"
+      echo "{\"path\": \"$INPUT_PATH\", \"text\": $(echo $INPUT_TEXT | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"overwrite\": ${INPUT_OVERWRITE:-true}}" | python3 Lab-01-Tech-Insights/mcp-scripts/write_text_file.py
 ---
 
 # Tech Insight 工作流
