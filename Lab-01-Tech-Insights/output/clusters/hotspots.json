@@ -1,424 +1,558 @@
 {
-  "mode": "fallback",
+  "mode": "llm",
   "top_k": 12,
   "hotspots": [
     {
-      "hotspot_id": "H33",
-      "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-garment-manufacturing",
-          "google-news-textile-en"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-en",
-          "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1hRcHlSQ2JXNUdFb1VNRHRYNlNGcDcybmpiZGhoVzNKUW9MVVRCYUJFNUhnMXNhYzN1dTFkZUlNbEpKWGpteTN1cFgxRl9lZGlHY3lYQ0M5REdOeWhuSTNlQ0RtY2tVcHVuMjBIVFlHdF9xY1IwS2Y5UE45LTl1WE9Ec2Nsb0tidXhuWHphLU5EUlNlazZrRERWZWctRXlJN2dBUVhJMzBKd2ZDajFoWllvcw?oc=5",
-          "published_at": "2026-04-20T20:28:45Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-garment-manufacturing",
-          "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1hRcHlSQ2JXNUdFb1VNRHRYNlNGcDcybmpiZGhoVzNKUW9MVVRCYUJFNUhnMXNhYzN1dTFkZUlNbEpKWGpteTN1cFgxRl9lZGlHY3lYQ0M5REdOeWhuSTNlQ0RtY2tVcHVuMjBIVFlHdF9xY1IwS2Y5UE45LTl1WE9Ec2Nsb0tidXhuWHphLU5EUlNlazZrRERWZWctRXlJN2dBUVhJMzBKd2ZDajFoWllvcw?oc=5",
-          "published_at": "2026-04-20T20:28:45Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H38",
-      "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-garment-manufacturing",
-          "google-news-textile-en"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-en",
-          "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vWEtpZE45Tk9xTzJ5b3padzNybDNMT1FaX0oySWxkTnFicFQ3cnRWVXBVQy1ZQ3dLVTFuTnJKTkVYWXE5TU85b2ZkRmc5ZGV1U3NkNk9BT0dCS3pLaGtoRVJ3?oc=5",
-          "published_at": "2026-04-20T12:07:52Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-garment-manufacturing",
-          "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vWEtpZE45Tk9xTzJ5b3padzNybDNMT1FaX0oySWxkTnFicFQ3cnRWVXBVQy1ZQ3dLVTFuTnJKTkVYWXE5TU85b2ZkRmc5ZGV1U3NkNk9BT0dCS3pLaGtoRVJ3?oc=5",
-          "published_at": "2026-04-20T12:07:52Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H40",
-      "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-cotton-market",
-          "google-news-textile-machinery"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-cotton-market",
-          "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRwY0kxTUxTTEFjLVU1ZXBKM2oyX2FOYTlLN2dfV2lYMml3RWt2MGtiaE04emQ0dV9sekd4YWlVb3VZbklHa0taclFqNHh4RzVpc0s2cEcwSXJsaHM5VFNBUkZ3aUY4aGVlUDRSNXVuXzNJMHR6UURfMTVueng4YkJrWUNSNTFodERkOEJ6XzlpYlRVQXNaR1FzY3dxcERo?oc=5",
-          "published_at": "2026-04-20T07:28:35Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-textile-machinery",
-          "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRwY0kxTUxTTEFjLVU1ZXBKM2oyX2FOYTlLN2dfV2lYMml3RWt2MGtiaE04emQ0dV9sekd4YWlVb3VZbklHa0taclFqNHh4RzVpc0s2cEcwSXJsaHM5VFNBUkZ3aUY4aGVlUDRSNXVuXzNJMHR6UURfMTVueng4YkJrWUNSNTFodERkOEJ6XzlpYlRVQXNaR1FzY3dxcERo?oc=5",
-          "published_at": "2026-04-20T07:28:35Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H48",
-      "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-textile-en",
-          "google-news-textile-machinery"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-en",
-          "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUl92WW1feTZwc3k2dWlQcnZpcnZiRi0zWEUtSkRGSnh5dk4yTzllRURxVWNpX3ZGcEk1WXk4TmVTSTN0VzUxdmZLNEE5WFhoSno4Z1ZGbkxoZGVxMmM2V3JTQzN3UVNLTzkta2pJRkNHb0FGM0txM2FRSmtSaEVoVUk4UGJHWkxPQUYteW1Kb01qU3RZTlY0UGY5Mk1IeENuZGV6Y0JsbE9hM2VsMzhrek9IQVg4czBrVC1hQXZkMUJFaWxLVHJaMS13eTFnZGNwckpQNnR3?oc=5",
-          "published_at": "2026-04-18T01:46:05Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-textile-machinery",
-          "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUl92WW1feTZwc3k2dWlQcnZpcnZiRi0zWEUtSkRGSnh5dk4yTzllRURxVWNpX3ZGcEk1WXk4TmVTSTN0VzUxdmZLNEE5WFhoSno4Z1ZGbkxoZGVxMmM2V3JTQzN3UVNLTzkta2pJRkNHb0FGM0txM2FRSmtSaEVoVUk4UGJHWkxPQUYteW1Kb01qU3RZTlY0UGY5Mk1IeENuZGV6Y0JsbE9hM2VsMzhrek9IQVg4czBrVC1hQXZkMUJFaWxLVHJaMS13eTFnZGNwckpQNnR3?oc=5",
-          "published_at": "2026-04-18T01:46:05Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H52",
-      "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-garment-manufacturing",
-          "google-news-textile-en"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-en",
-          "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm1xVjA0VEN3RENmSHdQTDdqU0RmX1E2N3RvU2daVU15dTJzOWtLR1BVeUplZTBZUnNDa3BISkI0TUYyLVU0OWhCelJzX2tLT1ZLS18ySlRtMkllc19HNktodU50UnRhRDJ2NGhuc1dGNjk4NG5FTDBDbU9leWp1Tnc0bzZPNW5OUVNBLWcxdkN3V0dnQUdtYWJ3WVpuT2dz?oc=5",
-          "published_at": "2026-04-17T20:43:25Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-garment-manufacturing",
-          "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm1xVjA0VEN3RENmSHdQTDdqU0RmX1E2N3RvU2daVU15dTJzOWtLR1BVeUplZTBZUnNDa3BISkI0TUYyLVU0OWhCelJzX2tLT1ZLS18ySlRtMkllc19HNktodU50UnRhRDJ2NGhuc1dGNjk4NG5FTDBDbU9leWp1Tnc0bzZPNW5OUVNBLWcxdkN3V0dnQUdtYWJ3WVpuT2dz?oc=5",
-          "published_at": "2026-04-17T20:43:25Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H58",
-      "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-textile-en",
-          "google-news-textile-machinery"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-en",
-          "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTy04S3Q1Z2hOc3haWjRscDFHZThsUFhWbHduSVJJdjlPaFR5aEtobkR5Zkx5ZG51MHhzZUxwRlVwYVVvdHNKVUtpY2VCY1dMZlZ4N0ZETkJGRy0yc2pTM00tdU5RZEQxZDMtbTE5MzNmOXhBblgtT3NYMXI0UDQtVlloRGVaYUNSX2NrV2k5dW5ZTEx0R25YeWIyRTI1YXpyWXpFRlhSLUNIdEhrMExaYjd5NXYzV0lDU0lKYg?oc=5",
-          "published_at": "2026-04-17T12:30:47Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-textile-machinery",
-          "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTy04S3Q1Z2hOc3haWjRscDFHZThsUFhWbHduSVJJdjlPaFR5aEtobkR5Zkx5ZG51MHhzZUxwRlVwYVVvdHNKVUtpY2VCY1dMZlZ4N0ZETkJGRy0yc2pTM00tdU5RZEQxZDMtbTE5MzNmOXhBblgtT3NYMXI0UDQtVlloRGVaYUNSX2NrV2k5dW5ZTEx0R25YeWIyRTI1YXpyWXpFRlhSLUNIdEhrMExaYjd5NXYzV0lDU0lKYg?oc=5",
-          "published_at": "2026-04-17T12:30:47Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H65",
-      "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-garment-manufacturing",
-          "google-news-textile-en"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-en",
-          "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5",
-          "published_at": "2026-04-17T05:00:00Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "google-news-garment-manufacturing",
-          "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5",
-          "published_at": "2026-04-17T05:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H111",
-      "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 72,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "google-news-garment-manufacturing",
-          "google-news-textile-machinery"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-machinery",
-          "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
-          "published_at": "2026-04-15T21:16:05Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "google-news-garment-manufacturing",
-          "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
-          "published_at": "2026-04-15T21:16:05Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
       "hotspot_id": "H01",
-      "title": "中国新闻网：2026年武汉纺织大学时装周启幕 - wuhan.gov.cn",
-      "summary": "tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
+      "title": "Techtextil 2026展会：技术纺织品与智能制造创新",
+      "summary": "法兰克福Techtextil 2026汇聚全球纺织机械与技术纺织品企业。意大利机械商、VDMA成员、英国FET纤维挤出技术等企业集中亮相。",
+      "category": "trend",
+      "overall_heat_score": 87,
       "coverage": {
-        "source_count": 1,
-        "companies": [],
+        "source_count": 3,
+        "companies": [
+          "VDMA",
+          "FET",
+          "iNTERSPARE"
+        ],
         "platforms": [
-          "google-news-textile-zh"
+          "google-news-textile-machinery",
+          "google-news-sustainable-textile",
+          "google-news-textile-en"
         ]
       },
-      "derived_tracks": [
-        "general"
-      ],
       "should_chase": "yes",
-      "chase_rationale": [],
+      "chase_rationale": [
+        "多来源报道同一展会节点",
+        "涉及机械可持续与技术纺织三大板块",
+        "全球供应链关键采购窗口"
+      ],
       "samples": [
         {
-          "platform": "google-news-textile-zh",
-          "title": "中国新闻网：2026年武汉纺织大学时装周启幕 - wuhan.gov.cn",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPMHRvRFFOaGlYZFRzN3B5akY2NzJFUU9pRVViQnpsVXhHcFdQaTRpeVhfNVc4NlozWjBhdFYwa3IwVVROd2NNc2Z5RVBram12MDRjSHRucVNIY2x0MUFlLWFwSmU0dTlxWnFxNE9TRQ?oc=5",
-          "published_at": "2026-04-21T01:13:00Z",
-          "company": null,
-          "signal_level": "S"
+          "platform": "google-news-textile-machinery",
+          "title": "Italian Textile Machinery Innovation Takes Center Stage In Frankfurt For Techtextil 2026",
+          "url": "https://www.textileworld.com",
+          "published_at": "2026-04-20",
+          "company": "Italian Textile",
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-textile-machinery",
+          "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles",
+          "url": "https://www.textileworld.com",
+          "published_at": "2026-04-19",
+          "company": "VDMA",
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-sustainable-textile",
+          "title": "VDMA to unveil smart textile innovations at Techtextil 2026",
+          "url": "https://www.fibre2fashion.com",
+          "published_at": "2026-04-18",
+          "company": "VDMA",
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-en",
+          "title": "Techtextil 2026 Recognition For The UK's Fibre Extrusion Technology (FET)",
+          "url": "https://www.textileworld.com",
+          "published_at": "2026-04-17",
+          "company": "FET",
+          "signal_level": "A"
         }
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "“我们的时代”——武汉纺织大学2026年时装周盛大启幕 - 武汉纺织大学",
-      "summary": "tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
+      "title": "欧洲纺织业危机：行业组织发出失去整个产业链警报",
+      "summary": "Euratex及WWD多次报道欧洲正在失去本土纺织业，制造端加速外迁，竞争力急剧下降，行业呼吁政策介入。",
+      "category": "trend",
+      "overall_heat_score": 85,
       "coverage": {
-        "source_count": 1,
-        "companies": [],
+        "source_count": 3,
+        "companies": [
+          "Euratex"
+        ],
         "platforms": [
-          "google-news-textile-zh"
+          "google-news-textile-en",
+          "google-news-garment-manufacturing",
+          "google-news-sustainable-textile"
         ]
       },
-      "derived_tracks": [
-        "general"
-      ],
       "should_chase": "yes",
-      "chase_rationale": [],
+      "chase_rationale": [
+        "多来源同一主题高频共振",
+        "政策风险高影响全球供应链格局",
+        "涉及Euratex官方组织发声"
+      ],
       "samples": [
         {
-          "platform": "google-news-textile-zh",
-          "title": "“我们的时代”——武汉纺织大学2026年时装周盛大启幕 - 武汉纺织大学",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CVnVvTTlkQ3FoYlZWTHNHTER3MFJJOFJEVmE1NTJ6eTJRaU5wbkI3WWJaOFZSeGhIVVlqckszWjZaZWpDR0l2Z0d0dGdGa0pEVDd0eFJnbw?oc=5",
-          "published_at": "2026-04-21T00:22:06Z",
-          "company": null,
-          "signal_level": "S"
+          "platform": "google-news-textile-en",
+          "title": "Europe Losing Textile Industry, Trade Group Warns",
+          "url": "https://www.wwd.com",
+          "published_at": "2026-04-20",
+          "company": "Euratex",
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "Europe Losing Textile Industry, Trade Group Warns",
+          "url": "https://www.wwd.com",
+          "published_at": "2026-04-20",
+          "company": "Euratex",
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-textile-en",
+          "title": "Europe losing its textile industry Euratex",
+          "url": "https://www.ecotextile.com",
+          "published_at": "2026-04-19",
+          "company": "Euratex",
+          "signal_level": "A"
         }
       ]
     },
     {
       "hotspot_id": "H03",
-      "title": "2026年武汉纺织大学时装周创意集市开市，37个学生摊位演绎“我们的时代” - 武汉纺织大学",
-      "summary": "tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
+      "title": "纺织品回收与循环经济加速：废旧纺织品处理技术迎爆发",
+      "summary": "废旧纺织品回收机械市场预测到2035年大幅增长、北美首届专项展Textiles Recycling Expo USA即将开幕、AI暗工厂将纺织废料转化为2万亿美元价值、江南大学Nature Communications发表聚酯废料催化回收成果。",
+      "category": "trend",
+      "overall_heat_score": 90,
       "coverage": {
-        "source_count": 1,
-        "companies": [],
+        "source_count": 4,
+        "companies": [
+          "江南大学"
+        ],
         "platforms": [
+          "google-news-textile-machinery",
+          "google-news-textile-en",
+          "google-news-sustainable-textile",
           "google-news-textile-zh"
         ]
       },
-      "derived_tracks": [
-        "general"
-      ],
       "should_chase": "yes",
-      "chase_rationale": [],
+      "chase_rationale": [
+        "跨来源高度共振",
+        "兼具学术突破与市场预测数据",
+        "关乎供应链ESG合规趋势"
+      ],
       "samples": [
         {
-          "platform": "google-news-textile-zh",
-          "title": "2026年武汉纺织大学时装周创意集市开市，37个学生摊位演绎“我们的时代” - 武汉纺织大学",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9MS0dkTXYxbnV3TjJxN3d4Zmw5b2Zfbkdqb2xKcm95eHdHdjBKN2t1OXExbkF4Tmg3RVhkc0s3cjhUeElYYVk2dUlQZmF1ZERqOHJxM0lIOA?oc=5",
-          "published_at": "2026-04-21T00:22:06Z",
+          "platform": "google-news-textile-machinery",
+          "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035",
+          "url": "https://news.google.com",
+          "published_at": "2026-04-20",
           "company": null,
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-textile-en",
+          "title": "Textiles Recycling Expo USA North Americas First Dedicated Textile Recycling Event",
+          "url": "https://news.google.com",
+          "published_at": "2026-04-18",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-sustainable-textile",
+          "title": "AI dark factories Turning textile waste into a 2 tn gold mine",
+          "url": "https://www.fibre2fashion.com",
+          "published_at": "2026-04-17",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-zh",
+          "title": "Nature Communications利用配位不饱和锌催化剂实现可持续回收聚酯废料",
+          "url": "https://www.jiangnan.edu.cn",
+          "published_at": "2026-04-16",
+          "company": "江南大学",
           "signal_level": "S"
         }
       ]
     },
     {
       "hotspot_id": "H04",
-      "title": "武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团",
-      "summary": "tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
+      "title": "ICE棉花期货涨至22个月高位：干旱担忧与美元走弱推动",
+      "summary": "ICE棉花期货本周多次上涨达22个月高位。推动因素：原油上涨、美国干旱担忧、美元走弱及对冲基金两年来首次转为净多头。Buy American Cotton Act在国会推动中。",
+      "category": "trend",
+      "overall_heat_score": 88,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "ICE",
+          "USDA"
+        ],
+        "platforms": [
+          "google-news-cotton-market",
+          "google-news-textile-en"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "棉花价格22个月新高具有里程碑意义",
+        "影响全球纺纱成本与采购决策",
+        "对冲基金转向多头为重要市场信号"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-cotton-market",
+          "title": "ICE cotton rallies to 22 month-high on weaker dollar, drought worries",
+          "url": "https://www.fibre2fashion.com",
+          "published_at": "2026-04-20",
+          "company": "ICE",
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-cotton-market",
+          "title": "ICE cotton extends rally on rising crude oil, US drought fears",
+          "url": "https://www.fibre2fashion.com",
+          "published_at": "2026-04-19",
+          "company": "ICE",
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-cotton-market",
+          "title": "Hedge funds turn bullish on cotton for first time in two years",
+          "url": "https://fashionnetwork.com",
+          "published_at": "2026-04-18",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-cotton-market",
+          "title": "Cleveland: Cotton Month of Recovery Continues",
+          "url": "https://cottongrower.com",
+          "published_at": "2026-04-17",
+          "company": null,
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "美国纺织政策集中发力：USDA支付、USMCA谈判与关税影响",
+      "summary": "USDA宣布2026年度Pima棉花与羊毛信托基金支付，NCTO在华盛顿强调USMCA谈判紧迫性，美国关税政策被指推高时尚供应链人权风险。",
+      "category": "trend",
+      "overall_heat_score": 80,
+      "coverage": {
+        "source_count": 3,
+        "companies": [
+          "USDA",
+          "NCTO"
+        ],
+        "platforms": [
+          "google-news-textile-en",
+          "google-news-cotton-market",
+          "google-news-garment-manufacturing"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "政策密集度高涉及多个联邦机构",
+        "直接影响北美纺织贸易格局",
+        "USMCA谈判窗口敏感"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-textile-en",
+          "title": "USDA Announces Payments Under the 2026 Pima Cotton and Wool Trust Funds",
+          "url": "https://www.usda.gov",
+          "published_at": "2026-04-20",
+          "company": "USDA",
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-en",
+          "title": "NCTO Meeting in Washington Highlights Urgency of USMCA Negotiations",
+          "url": "https://www.wwd.com",
+          "published_at": "2026-04-19",
+          "company": "NCTO",
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-en",
+          "title": "US tariffs drive human rights risks in the fashion sector",
+          "url": "https://sustainableviews.com",
+          "published_at": "2026-04-18",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-cotton-market",
+          "title": "Buy American Cotton Act aims to support US farmers",
+          "url": "https://www.everythinglubbock.com",
+          "published_at": "2026-04-17",
+          "company": null,
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H06",
+      "title": "中国纺织产业高质量发展：福建政策、海峡两岸博览会与深圳科创大会",
+      "summary": "福建省推出30项服务措施、第28届海峡两岸纺织服装博览会在石狮开幕、首届深圳纺织服装科技创新大会举办，AI试衣智能体亮相。一季度中国纺织服装出口同比增长1.2%。",
+      "category": "trend",
+      "overall_heat_score": 83,
       "coverage": {
         "source_count": 1,
-        "companies": [],
+        "companies": [
+          "深纺织A"
+        ],
         "platforms": [
           "google-news-textile-zh"
         ]
       },
-      "derived_tracks": [
-        "general"
-      ],
       "should_chase": "yes",
-      "chase_rationale": [],
+      "chase_rationale": [
+        "政府政策密集落地",
+        "覆盖多个重点产业集群",
+        "展会节点集中具有高时效性"
+      ],
       "samples": [
         {
           "platform": "google-news-textile-zh",
-          "title": "武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKVEpESDRTOWZ2QlE3WFV2TUxmZ1oycmEyaHlheXVLcklXSzNncS1LU3h4RXM4c3Z0NFNSSjBQVE5ocXZvUjJqWTFUR1ZKUlpTS3RNRVdBQzk?oc=5",
-          "published_at": "2026-04-20T14:10:41Z",
+          "title": "福建推出30项服务措施助力纺织鞋服产业高质量发展",
+          "url": "https://fj.chinanews.com.cn",
+          "published_at": "2026-04-20",
           "company": null,
           "signal_level": "S"
+        },
+        {
+          "platform": "google-news-textile-zh",
+          "title": "第二十八届海峡两岸纺织服装博览会启幕",
+          "url": "https://cctv.com",
+          "published_at": "2026-04-19",
+          "company": null,
+          "signal_level": "S"
+        },
+        {
+          "platform": "google-news-textile-zh",
+          "title": "首届深圳纺织服装科技创新大会举办",
+          "url": "https://sina.com.cn",
+          "published_at": "2026-04-18",
+          "company": null,
+          "signal_level": "S"
+        },
+        {
+          "platform": "google-news-textile-zh",
+          "title": "一季度中国纺织服装出口同比增长1.2%",
+          "url": "https://chinanews.com.cn",
+          "published_at": "2026-04-17",
+          "company": null,
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H07",
+      "title": "孟加拉国服装业能源危机冲击产能",
+      "summary": "BGMEA敦促政府紧急应对持续的能源危机，该危机已显著打击孟加拉国服装出口产能。越南纺织服装业在订单复苏中仍保持谨慎。",
+      "category": "single",
+      "overall_heat_score": 78,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "BGMEA"
+        ],
+        "platforms": [
+          "google-news-garment-manufacturing",
+          "google-news-textile-en"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "影响全球服装供应链重要节点",
+        "BGMEA官方组织背书",
+        "越南同期信号形成区域对比"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "BGMEA urges government action as energy crisis hits garment output",
+          "url": "https://www.just-style.com",
+          "published_at": "2026-04-20",
+          "company": "BGMEA",
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "Vietnam textile-garment industry remains cautious despite order recovery",
+          "url": "https://theinvestor.vn",
+          "published_at": "2026-04-18",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H08",
+      "title": "Kornit Digital收购PrintFactory：数字按需印花产业整合加速",
+      "summary": "Kornit Digital宣布收购PrintFactory，加速印花行业向数字化按需生产转型，整合工作流程管理平台与DTG打印生态系统。",
+      "category": "single",
+      "overall_heat_score": 82,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Kornit Digital",
+          "PrintFactory"
+        ],
+        "platforms": [
+          "google-news-textile-en"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "A级官方收购公告",
+        "数字印花行业战略整合节点",
+        "影响按需生产赛道竞争格局"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-textile-en",
+          "title": "Kornit Digital Acquires PrintFactory To Accelerate The Industrys Transition To Digital On-Demand Production",
+          "url": "https://news.google.com",
+          "published_at": "2026-04-19",
+          "company": "Kornit Digital",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H09",
+      "title": "Mayer & Cie.完成所有权转让：徐洪杰收购德国圆编机龙头",
+      "summary": "德国圆编机龙头Mayer & Cie.的未来已获保障，徐洪杰完成收购交易，是一起具有中欧纺织机械战略意义的跨境并购案例。",
+      "category": "single",
+      "overall_heat_score": 75,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Mayer & Cie."
+        ],
+        "platforms": [
+          "google-news-textile-machinery"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "纺织机械细分领域龙头易主",
+        "中欧跨境并购敏感信号",
+        "圆编机市场格局影响"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-textile-machinery",
+          "title": "Mayer and Cie future secured as Xu Hongjie completes acquisition",
+          "url": "https://www.fibre2fashion.com",
+          "published_at": "2026-04-18",
+          "company": "Mayer and Cie.",
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H10",
+      "title": "海藻纤维替代合成染料：纺织服装2026年新材料转型",
+      "summary": "纺织服装行业以30亿美元规模押注海藻纤维替代传统合成染料，被认为是2026年最重要的可持续材料转型趋势之一。",
+      "category": "single",
+      "overall_heat_score": 76,
+      "coverage": {
+        "source_count": 1,
+        "companies": [],
+        "platforms": [
+          "google-news-sustainable-textile"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "3bn市场规模量化数据",
+        "可持续材料赛道新兴信号",
+        "独特的替代染料路线值得追踪"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-sustainable-textile",
+          "title": "The 3 bn seaweed shift: Why T and A is ditching synthetic dyes in 2026",
+          "url": "https://www.fibre2fashion.com",
+          "published_at": "2026-04-17",
+          "company": null,
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H11",
+      "title": "NYC $170万服装产业本地化生产基金",
+      "summary": "纽约市宣布向本地服装生产提供170万美元专项扶持资金，旨在振兴纽约本地服装制造业，在全球制造业回岸背景下具有政策示范价值。",
+      "category": "single",
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-garment-manufacturing",
+          "google-news-textile-en"
+        ]
+      },
+      "should_chase": "no",
+      "chase_rationale": [
+        "政策规模较小主要为地方意义"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "NYC Backs Garment Sector With 1.7 Million Local Production Fund",
+          "url": "https://www.wwd.com",
+          "published_at": "2026-04-20",
+          "company": null,
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-textile-en",
+          "title": "NYC Backs Garment Sector With 1.7 Million Local Production Fund",
+          "url": "https://www.wwd.com",
+          "published_at": "2026-04-20",
+          "company": null,
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H12",
+      "title": "印度服装业三重压力：原材料燃料与运费同步上涨",
+      "summary": "印度服装行业面临原材料价格上涨、燃料成本攀升、国际运费高位三重叠加压力，同时面临伊朗战争冲击农业投入端，$100亿出口目标挑战严峻。",
+      "category": "single",
+      "overall_heat_score": 74,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-garment-manufacturing",
+          "google-news-cotton-market"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "多重成本压力叠加的结构性风险",
+        "伊朗战争对农业投入的上游冲击",
+        "印度出口目标与现实落差值得追踪"
+      ],
+      "samples": [
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "Raw Materials Fuel And Freight The Triple Squeeze On The Indian Apparel Industry",
+          "url": "https://apparelresources.com",
+          "published_at": "2026-04-19",
+          "company": null,
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-cotton-market",
+          "title": "War in Iran Impacting Farm Inputs and Outputs",
+          "url": "https://southeastagnet.com",
+          "published_at": "2026-04-18",
+          "company": null,
+          "signal_level": "A"
         }
       ]
     }

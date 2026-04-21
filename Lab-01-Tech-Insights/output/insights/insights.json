@@ -1,260 +1,306 @@
 {
-  "mode": "fallback",
+  "mode": "llm",
   "insights": [
     {
-      "hotspot_id": "H33",
-      "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
-      "what_changed": "过去 24 小时围绕“NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1hRcHlSQ2JXNUdFb1VNRHRYNlNGcDcybmpiZGhoVzNKUW9MVVRCYUJFNUhnMXNhYzN1dTFkZUlNbEpKWGpteTN1cFgxRl9lZGlHY3lYQ0M5REdOeWhuSTNlQ0RtY2tVcHVuMjBIVFlHdF9xY1IwS2Y5UE45LTl1WE9Ec2Nsb0tidXhuWHphLU5EUlNlazZrRERWZWctRXlJN2dBUVhJMzBKd2ZDajFoWllvcw?oc=5",
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1hRcHlSQ2JXNUdFb1VNRHRYNlNGcDcybmpiZGhoVzNKUW9MVVRCYUJFNUhnMXNhYzN1dTFkZUlNbEpKWGpteTN1cFgxRl9lZGlHY3lYQ0M5REdOeWhuSTNlQ0RtY2tVcHVuMjBIVFlHdF9xY1IwS2Y5UE45LTl1WE9Ec2Nsb0tidXhuWHphLU5EUlNlazZrRERWZWctRXlJN2dBUVhJMzBKd2ZDajFoWllvcw?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H38",
-      "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
-      "what_changed": "过去 24 小时围绕“Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vWEtpZE45Tk9xTzJ5b3padzNybDNMT1FaX0oySWxkTnFicFQ3cnRWVXBVQy1ZQ3dLVTFuTnJKTkVYWXE5TU85b2ZkRmc5ZGV1U3NkNk9BT0dCS3pLaGtoRVJ3?oc=5",
-        "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vWEtpZE45Tk9xTzJ5b3padzNybDNMT1FaX0oySWxkTnFicFQ3cnRWVXBVQy1ZQ3dLVTFuTnJKTkVYWXE5TU85b2ZkRmc5ZGV1U3NkNk9BT0dCS3pLaGtoRVJ3?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H40",
-      "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
-      "what_changed": "过去 24 小时围绕“Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRwY0kxTUxTTEFjLVU1ZXBKM2oyX2FOYTlLN2dfV2lYMml3RWt2MGtiaE04emQ0dV9sekd4YWlVb3VZbklHa0taclFqNHh4RzVpc0s2cEcwSXJsaHM5VFNBUkZ3aUY4aGVlUDRSNXVuXzNJMHR6UURfMTVueng4YkJrWUNSNTFodERkOEJ6XzlpYlRVQXNaR1FzY3dxcERo?oc=5",
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRwY0kxTUxTTEFjLVU1ZXBKM2oyX2FOYTlLN2dfV2lYMml3RWt2MGtiaE04emQ0dV9sekd4YWlVb3VZbklHa0taclFqNHh4RzVpc0s2cEcwSXJsaHM5VFNBUkZ3aUY4aGVlUDRSNXVuXzNJMHR6UURfMTVueng4YkJrWUNSNTFodERkOEJ6XzlpYlRVQXNaR1FzY3dxcERo?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H48",
-      "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
-      "what_changed": "过去 24 小时围绕“Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUl92WW1feTZwc3k2dWlQcnZpcnZiRi0zWEUtSkRGSnh5dk4yTzllRURxVWNpX3ZGcEk1WXk4TmVTSTN0VzUxdmZLNEE5WFhoSno4Z1ZGbkxoZGVxMmM2V3JTQzN3UVNLTzkta2pJRkNHb0FGM0txM2FRSmtSaEVoVUk4UGJHWkxPQUYteW1Kb01qU3RZTlY0UGY5Mk1IeENuZGV6Y0JsbE9hM2VsMzhrek9IQVg4czBrVC1hQXZkMUJFaWxLVHJaMS13eTFnZGNwckpQNnR3?oc=5",
-        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUl92WW1feTZwc3k2dWlQcnZpcnZiRi0zWEUtSkRGSnh5dk4yTzllRURxVWNpX3ZGcEk1WXk4TmVTSTN0VzUxdmZLNEE5WFhoSno4Z1ZGbkxoZGVxMmM2V3JTQzN3UVNLTzkta2pJRkNHb0FGM0txM2FRSmtSaEVoVUk4UGJHWkxPQUYteW1Kb01qU3RZTlY0UGY5Mk1IeENuZGV6Y0JsbE9hM2VsMzhrek9IQVg4czBrVC1hQXZkMUJFaWxLVHJaMS13eTFnZGNwckpQNnR3?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H52",
-      "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
-      "what_changed": "过去 24 小时围绕“Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm1xVjA0VEN3RENmSHdQTDdqU0RmX1E2N3RvU2daVU15dTJzOWtLR1BVeUplZTBZUnNDa3BISkI0TUYyLVU0OWhCelJzX2tLT1ZLS18ySlRtMkllc19HNktodU50UnRhRDJ2NGhuc1dGNjk4NG5FTDBDbU9leWp1Tnc0bzZPNW5OUVNBLWcxdkN3V0dnQUdtYWJ3WVpuT2dz?oc=5",
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm1xVjA0VEN3RENmSHdQTDdqU0RmX1E2N3RvU2daVU15dTJzOWtLR1BVeUplZTBZUnNDa3BISkI0TUYyLVU0OWhCelJzX2tLT1ZLS18ySlRtMkllc19HNktodU50UnRhRDJ2NGhuc1dGNjk4NG5FTDBDbU9leWp1Tnc0bzZPNW5OUVNBLWcxdkN3V0dnQUdtYWJ3WVpuT2dz?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H58",
-      "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
-      "what_changed": "过去 24 小时围绕“VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTy04S3Q1Z2hOc3haWjRscDFHZThsUFhWbHduSVJJdjlPaFR5aEtobkR5Zkx5ZG51MHhzZUxwRlVwYVVvdHNKVUtpY2VCY1dMZlZ4N0ZETkJGRy0yc2pTM00tdU5RZEQxZDMtbTE5MzNmOXhBblgtT3NYMXI0UDQtVlloRGVaYUNSX2NrV2k5dW5ZTEx0R25YeWIyRTI1YXpyWXpFRlhSLUNIdEhrMExaYjd5NXYzV0lDU0lKYg?oc=5",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTy04S3Q1Z2hOc3haWjRscDFHZThsUFhWbHduSVJJdjlPaFR5aEtobkR5Zkx5ZG51MHhzZUxwRlVwYVVvdHNKVUtpY2VCY1dMZlZ4N0ZETkJGRy0yc2pTM00tdU5RZEQxZDMtbTE5MzNmOXhBblgtT3NYMXI0UDQtVlloRGVaYUNSX2NrV2k5dW5ZTEx0R25YeWIyRTI1YXpyWXpFRlhSLUNIdEhrMExaYjd5NXYzV0lDU0lKYg?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H65",
-      "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
-      "what_changed": "过去 24 小时围绕“Fashion industry - Design, Manufacturing, Trends - Britannica”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5",
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5"
-      ]
-    },
-    {
-      "hotspot_id": "H111",
-      "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
-      "what_changed": "过去 24 小时围绕“Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox”出现了新的更新与讨论，覆盖 2 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。",
-      "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
-      ],
-      "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "继续观察后续 24-72 小时是否形成更强共振"
-      ],
-      "risk_notes": [],
-      "references": [
-        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
-        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5"
-      ]
-    },
-    {
       "hotspot_id": "H01",
-      "title": "中国新闻网：2026年武汉纺织大学时装周启幕 - wuhan.gov.cn",
-      "what_changed": "过去 24 小时围绕“中国新闻网：2026年武汉纺织大学时装周启幕 - wuhan.gov.cn”出现了新的更新与讨论，覆盖 1 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个高信号单点更新，虽然覆盖面较窄，但对技术选型或行业判断仍有参考价值。",
+      "title": "Techtextil 2026展会：技术纺织品与智能制造创新",
+      "what_changed": "法兰克福Techtextil 2026汇聚全球纺织机械与技术纺织品头部企业，意大利机械商集体亮相，VDMA成员展示智能技术纺织品，英国FET获展会官方认可，iNTERSPARE推出技术纺织品精整升级方案。这是2026年纺织机械行业最重要的一次展会窗口。",
+      "why_it_matters": "Techtextil是全球技术纺织品与非织造布最重要的专业展会。2026年展会的主题聚焦智能制造与可持续创新，表明行业正经历从传统纺织向高技术、高附加值产品的结构性迁移。欧洲机械商在此展示最新技术代表了行业未来方向。",
       "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
+        "纺织机械采购商",
+        "技术纺织品制造企业",
+        "欧洲纺织机械出口商",
+        "全球非织造布产业链"
       ],
       "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "结合现有路线图判断是否需要提前响应"
+        "关注Techtextil 2026展后技术报告与市场情报",
+        "评估欧洲先进机械设备引进可行性",
+        "追踪VDMA成员产品路线图与合作机会"
       ],
       "risk_notes": [
-        "当前主要来自单一来源，建议等待更多独立信号确认。"
+        "欧洲展会参展成本高",
+        "技术转让受出口管制限制"
       ],
       "references": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPMHRvRFFOaGlYZFRzN3B5akY2NzJFUU9pRVViQnpsVXhHcFdQaTRpeVhfNVc4NlozWjBhdFYwa3IwVVROd2NNc2Z5RVBram12MDRjSHRucVNIY2x0MUFlLWFwSmU0dTlxWnFxNE9TRQ?oc=5"
+        "https://www.textileworld.com",
+        "https://www.fibre2fashion.com"
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "“我们的时代”——武汉纺织大学2026年时装周盛大启幕 - 武汉纺织大学",
-      "what_changed": "过去 24 小时围绕““我们的时代”——武汉纺织大学2026年时装周盛大启幕 - 武汉纺织大学”出现了新的更新与讨论，覆盖 1 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个高信号单点更新，虽然覆盖面较窄，但对技术选型或行业判断仍有参考价值。",
+      "title": "欧洲纺织业危机：行业组织发出失去整个产业链警报",
+      "what_changed": "Euratex（欧洲纺织品服装组织）与WWD联合发出欧洲正在失去本土纺织制造业的警报。多篇报道显示欧洲纺织品生产能力加速外移，企业经营压力极大，贸易团体呼吁欧盟层面政策干预。",
+      "why_it_matters": "欧洲纺织业的衰退将重塑全球供应链格局。中国、亚洲供应商可能填补欧洲产能真空，同时也意味着欧洲本土市场的需求侧将更依赖进口。政策博弈（贸易保护vs自由化）将直接影响全球纺织品贸易规则。",
       "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
+        "欧洲本土纺织制造企业",
+        "亚洲纺织出口商（机遇）",
+        "欧盟贸易政策制定者",
+        "全球纺织品品牌采购商"
       ],
       "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "结合现有路线图判断是否需要提前响应"
+        "密切追踪欧盟纺织业救助政策动向",
+        "评估欧洲市场份额扩展机会",
+        "关注EURATEX游说动态与欧委会回应"
       ],
       "risk_notes": [
-        "当前主要来自单一来源，建议等待更多独立信号确认。"
+        "欧洲可能加征关税或实施进口限制作为保护措施",
+        "去工业化可能触发政治民粹反应"
       ],
       "references": [
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CVnVvTTlkQ3FoYlZWTHNHTER3MFJJOFJEVmE1NTJ6eTJRaU5wbkI3WWJaOFZSeGhIVVlqckszWjZaZWpDR0l2Z0d0dGdGa0pEVDd0eFJnbw?oc=5"
+        "https://www.wwd.com",
+        "https://www.ecotextile.com"
       ]
     },
     {
       "hotspot_id": "H03",
-      "title": "2026年武汉纺织大学时装周创意集市开市，37个学生摊位演绎“我们的时代” - 武汉纺织大学",
-      "what_changed": "过去 24 小时围绕“2026年武汉纺织大学时装周创意集市开市，37个学生摊位演绎“我们的时代” - 武汉纺织大学”出现了新的更新与讨论，覆盖 1 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个高信号单点更新，虽然覆盖面较窄，但对技术选型或行业判断仍有参考价值。",
+      "title": "纺织品回收与循环经济加速：废旧纺织品处理技术迎爆发",
+      "what_changed": "纺织品循环经济在本周从学术、产业、资本三个维度同时爆发：江南大学在Nature Communications发表利用锌催化剂回收聚酯废料的突破性研究；北美首届Textiles Recycling Expo USA即将开幕；Fibre2Fashion报道AI驱动的暗工厂将纺织废料潜力定价为2万亿美元；废旧纺织品回收机械市场到2035年预计大幅增长。",
+      "why_it_matters": "《欧盟纺织品战略》要求2030年强制推行纺织品回收，中国双碳政策也倒逼废旧纺织处置产业化。学术突破（化学回收）+市场需求（展会）+资本关注（市场预测）三重共振表明这一赛道正进入快速商业化阶段，是纺织行业最具增长潜力的方向之一。",
       "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
+        "废旧纺织品回收机械制造商",
+        "化学回收技术研发机构",
+        "品牌商ESG合规部门",
+        "纺织废料产生方（纺纱厂、服装厂）"
       ],
       "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "结合现有路线图判断是否需要提前响应"
+        "追踪江南大学锌催化剂技术商业化进展",
+        "关注Textiles Recycling Expo USA展后报告",
+        "评估废旧纺织品回收业务战略布局可行性",
+        "识别AI暗工厂模式可落地的场景与合作机会"
       ],
       "risk_notes": [
-        "当前主要来自单一来源，建议等待更多独立信号确认。"
+        "化学回收技术成熟度仍有限，规模化成本高",
+        "AI暗工厂概念存在过度炒作风险"
       ],
       "references": [
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9MS0dkTXYxbnV3TjJxN3d4Zmw5b2Zfbkdqb2xKcm95eHdHdjBKN2t1OXExbkF4Tmg3RVhkc0s3cjhUeElYYVk2dUlQZmF1ZERqOHJxM0lIOA?oc=5"
+        "https://www.jiangnan.edu.cn",
+        "https://www.fibre2fashion.com"
       ]
     },
     {
       "hotspot_id": "H04",
-      "title": "武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团",
-      "what_changed": "过去 24 小时围绕“武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团”出现了新的更新与讨论，覆盖 1 个来源，主题轨道为 general。",
-      "why_it_matters": "这是一个高信号单点更新，虽然覆盖面较窄，但对技术选型或行业判断仍有参考价值。",
+      "title": "ICE棉花期货涨至22个月高位：干旱担忧与美元走弱推动",
+      "what_changed": "ICE棉花期货本周两度上涨达到近22个月以来的价格高位。具体推动因素：美国德克萨斯州及西部棉区持续干旱担忧、国际原油价格上涨传导成本、美元指数走弱推高大宗商品价格，加之对冲基金在两年内首次转为棉花净多头，市场做多情绪明显升温。美国国会同期在推进Buy American Cotton Act。",
+      "why_it_matters": "棉花是全球最重要的天然纺织纤维，其价格上涨将直接传导到纺纱、织造、服装制造的生产成本，最终影响品牌商的采购预算与终端定价。22个月新高是显著的价格拐点信号，对冲基金入场做多进一步增强了价格上行预期。",
       "who_is_impacted": [
-        "开发者",
-        "技术管理者",
-        "平台/基础设施团队"
+        "棉纺企业（成本上升）",
+        "棉花期货投资者",
+        "纺织品采购商（提前锁价需求）",
+        "美国棉花种植农户（受益）"
       ],
       "next_actions": [
-        "查看样本链接确认原文",
-        "判断是否需要团队内同步",
-        "结合现有路线图判断是否需要提前响应"
+        "评估原棉采购时机，考虑期货套保策略",
+        "关注美国棉区干旱天气报告",
+        "追踪Buy American Cotton Act立法进展",
+        "审查供应商合同中的原材料价格条款"
       ],
       "risk_notes": [
-        "当前主要来自单一来源，建议等待更多独立信号确认。"
+        "价格过热后可能出现快速回调",
+        "地缘政治（伊朗）影响农业投入成本"
       ],
       "references": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKVEpESDRTOWZ2QlE3WFV2TUxmZ1oycmEyaHlheXVLcklXSzNncS1LU3h4RXM4c3Z0NFNSSjBQVE5ocXZvUjJqWTFUR1ZKUlpTS3RNRVdBQzk?oc=5"
+        "https://www.fibre2fashion.com",
+        "https://cottongrower.com"
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "美国纺织政策集中发力：USDA支付、USMCA谈判与关税影响",
+      "what_changed": "USDA正式宣布2026年Pima棉花与羊毛信托基金支付计划，同时NCTO在华盛顿会议上强调USMCA重新谈判的紧迫性。多篇报道指出美国加征关税政策正在推高时尚供应链中的人权风险，印度、孟加拉等供应商面临双重压力。",
+      "why_it_matters": "USMCA谈判直接决定北美纺织品原产地规则，影响墨西哥纺织品出口商和美国品牌的采购布局。美国关税政策的人权风险警告将对供应链透明度与合规要求产生倒逼压力。USDA补贴体现美国政府对本土纤维产业的战略支持意图。",
+      "who_is_impacted": [
+        "北美纺织品采购商",
+        "墨西哥纺织出口企业",
+        "美国棉花/羊毛种植户",
+        "时尚品牌ESG与合规团队"
+      ],
+      "next_actions": [
+        "跟踪USMCA纺织品条款谈判进展",
+        "评估关税变化对供应商选择的影响",
+        "加强供应链人权合规体系建设",
+        "关注USDA支付政策对纤维供应侧影响"
+      ],
+      "risk_notes": [
+        "贸易保护政策可能引发贸易伙伴反制",
+        "USMCA谈判结果存在较大不确定性"
+      ],
+      "references": [
+        "https://www.usda.gov",
+        "https://www.wwd.com"
+      ]
+    },
+    {
+      "hotspot_id": "H06",
+      "title": "中国纺织产业高质量发展：政策密集落地与科技创新提速",
+      "what_changed": "本周中国纺织行业政策与展会活动密集：福建省推出30项专项服务措施扶持纺织鞋服产业；第28届海峡两岸纺织服装博览会在福建石狮开幕，首批两岸纺织鞋服供应链百强榜单发布；首届（深圳）纺织服装科技创新大会举办，AI试衣智能体亮相；一季度中国纺织服装出口同比增长1.2%，温和增长。",
+      "why_it_matters": "中国纺织产业正加快向高质量、科技化、品牌化转型。福建是中国最重要的纺织鞋服产业集群之一，政策密集落地显示地方政府对产业升级的高度重视。深圳科创大会的AI试衣技术代表了消费端数字化趋势，海峡两岸百强榜单则为两岸供应链合作提供了新平台。",
+      "who_is_impacted": [
+        "福建纺织服装企业",
+        "两岸纺织供应链合作方",
+        "纺织科技创新创业企业",
+        "全球品牌商在华供应商"
+      ],
+      "next_actions": [
+        "关注福建30项政策具体落实条款与申请机会",
+        "评估海峡两岸供应链百强榜单合作价值",
+        "追踪AI试衣与数字化服装技术商业化进展",
+        "分析出口1.2%增速背后的品类结构变化"
+      ],
+      "risk_notes": [
+        "地缘政治摩擦可能影响两岸产业合作稳定性",
+        "出口增速较低，需关注外需疲软风险"
+      ],
+      "references": [
+        "https://fj.chinanews.com.cn",
+        "https://chinanews.com.cn"
+      ]
+    },
+    {
+      "hotspot_id": "H07",
+      "title": "孟加拉国服装业能源危机冲击产能",
+      "what_changed": "孟加拉国服装制造商协会（BGMEA）正式呼吁政府紧急采取行动，解决持续困扰制造业的能源供应短缺问题，该危机已导致工厂产能明显下降。与此同时，越南纺织服装业在订单复苏背景下仍保持谨慎态度，显示亚洲主要服装出口地区均面临不确定性。",
+      "why_it_matters": "孟加拉国是全球第二大服装出口国，产能受损将直接影响欧美品牌的订单交付。能源危机可能导致交期延误、成本上升，逼迫部分订单向其他供应地转移。这与越南谨慎态度叠加，可能进一步加剧全球服装供应链的区域格局调整。",
+      "who_is_impacted": [
+        "孟加拉国服装制造商",
+        "欧美服装品牌采购商",
+        "越南服装出口企业",
+        "全球供应链物流服务商"
+      ],
+      "next_actions": [
+        "评估孟加拉国供应商的能源风险敞口",
+        "考虑供应商多元化以降低集中风险",
+        "跟踪孟加拉国政府的能源政策进展",
+        "监控越南订单恢复速度与产能利用率"
+      ],
+      "risk_notes": [
+        "能源危机短期内难以完全解决",
+        "订单转移可能推高越南、印度等替代市场的产能价格"
+      ],
+      "references": [
+        "https://www.just-style.com",
+        "https://theinvestor.vn"
+      ]
+    },
+    {
+      "hotspot_id": "H08",
+      "title": "Kornit Digital收购PrintFactory：数字按需印花产业整合加速",
+      "what_changed": "Kornit Digital宣布完成对PrintFactory的收购，PrintFactory是一家专注于印刷工作流程管理软件的公司。此次收购旨在将软件工作流管理能力整合到Kornit的直接到服装（DTG）数字印花生态系统中，加速行业向按需生产模式转型。",
+      "why_it_matters": "Kornit此次收购标志着数字印花行业正从硬件竞争向软硬件一体化生态竞争演进。通过整合工作流程管理平台，Kornit将能为客户提供端到端的数字按需生产解决方案，这将改变中小批量服装印花的商业模式，也将影响传统丝网印花和大货生产模式的竞争格局。",
+      "who_is_impacted": [
+        "数字印花设备采购商",
+        "服装按需生产企业",
+        "PrintFactory软件用户",
+        "传统印花工厂（竞争压力）"
+      ],
+      "next_actions": [
+        "评估Kornit收购后的产品路线图与合作机会",
+        "关注PrintFactory用户群迁移情况",
+        "评估DTG印花技术对小批量服装生产的经济性",
+        "追踪Kornit在Konnections 2026发布的行业应用案例"
+      ],
+      "risk_notes": [
+        "整合风险：软件与硬件生态融合需要时间",
+        "按需生产模式规模化面临交期管理挑战"
+      ],
+      "references": [
+        "https://news.google.com",
+        "https://www.fibre2fashion.com"
+      ]
+    },
+    {
+      "hotspot_id": "H09",
+      "title": "Mayer & Cie.完成所有权转让：徐洪杰收购德国圆编机龙头",
+      "what_changed": "德国圆编机（circular knitting machine）行业龙头Mayer & Cie.完成控股权转让，徐洪杰成为新的所有者。此次收购确保了这家德国百年纺织机械企业的未来发展，具有中欧纺织机械行业深度融合的战略含义。",
+      "why_it_matters": "Mayer & Cie.是全球最顶尖的圆编机制造商，其技术与品牌在全球圆编机市场具有举足轻重的地位。此次中资背景的收购完成，意味着中国资本正在向欧洲高端纺织机械制造领域延伸，有助于获取先进技术、品牌渠道和服务网络，同时也可能引发欧洲对技术转让的审查关注。",
+      "who_is_impacted": [
+        "Mayer & Cie.现有客户",
+        "圆编机全球市场竞争对手",
+        "欧洲纺织机械监管机构",
+        "中国纺织机械投资者"
+      ],
+      "next_actions": [
+        "追踪Mayer & Cie.在新所有权下的产品战略变化",
+        "评估中欧纺织机械技术合作机会",
+        "关注欧洲对外资收购纺织机械企业的审查动态"
+      ],
+      "risk_notes": [
+        "欧洲监管机构可能对技术转让设置障碍",
+        "品牌声誉与德国工程文化的传承存在整合风险"
+      ],
+      "references": [
+        "https://www.fibre2fashion.com"
+      ]
+    },
+    {
+      "hotspot_id": "H10",
+      "title": "海藻纤维替代合成染料：纺织服装2026年新材料转型",
+      "what_changed": "Fibre2Fashion报道纺织服装行业正以约30亿美元规模积极布局海藻基材料替代传统合成染料的转型，认为2026年是这一新材料进入商业化应用的关键节点。海藻纤维具有天然抗菌、可生物降解等特性，被视为可持续纺织材料的下一代替代方案之一。",
+      "why_it_matters": "合成染料污染是纺织行业最大的环境问题之一，全球每年因纺织品染色产生大量有毒废水。海藻纤维替代方案若能商业化，将从根本上改变纺织品染色环节的环境影响，符合欧盟绿色新政和中国双碳政策的方向，也将为品牌商的ESG报告提供有力支撑。",
+      "who_is_impacted": [
+        "可持续材料研发企业",
+        "时尚品牌可持续发展团队",
+        "传统合成染料供应商（冲击）",
+        "纺织品认证机构"
+      ],
+      "next_actions": [
+        "关注海藻纤维材料的商业化成熟度与成本曲线",
+        "评估与海藻纤维初创企业合作/投资的可行性",
+        "跟踪欧盟纺织品生态标签（EU Ecolabel）对天然染料的认可进展"
+      ],
+      "risk_notes": [
+        "海藻纤维规模化生产的成本仍然较高",
+        "性能指标（颜色稳定性、耐洗性）仍需验证"
+      ],
+      "references": [
+        "https://www.fibre2fashion.com"
+      ]
+    },
+    {
+      "hotspot_id": "H11",
+      "title": "NYC $170万服装产业本地化生产基金",
+      "what_changed": "纽约市宣布设立170万美元的专项基金，支持纽约本地服装制造业的生产恢复与能力提升，是近年来纽约市对本土服装制造业的重要政策信号。",
+      "why_it_matters": "在全球制造业回岸（reshoring）与近岸外包（nearshoring）趋势下，纽约市的这一政策具有示范意义。虽然170万美元规模较小，但标志着美国城市开始积极布局本地制造业复兴，有助于提升小批量、快时尚本地生产能力，也为本地设计师提供更灵活的生产选项。",
+      "who_is_impacted": [
+        "纽约本地服装制造商",
+        "设计师品牌",
+        "纽约服装工人",
+        "美国本土制造业推广机构"
+      ],
+      "next_actions": [
+        "关注基金申请条件与资助项目进展",
+        "评估近岸制造模式对供应链响应速度的影响"
+      ],
+      "risk_notes": [
+        "资金规模有限，难以系统性改变纽约服装制造业格局"
+      ],
+      "references": [
+        "https://www.wwd.com"
+      ]
+    },
+    {
+      "hotspot_id": "H12",
+      "title": "印度服装业三重压力：原材料燃料与运费同步上涨",
+      "what_changed": "印度服装行业同时承受原材料价格上涨（棉花等）、燃料成本攀升和国际运费高位三重叠加压力，而印伊局势导致农业投入品成本进一步上升。与此同时，印度政府力推的1000亿美元服装出口目标完成压力巨大。",
+      "why_it_matters": "印度是全球第二大棉花生产国和重要服装出口国，三重成本压力将压缩制造商利润空间，影响出口竞争力。棉价高位、燃料成本与运费叠加，可能导致印度企业在与孟加拉国、越南的竞争中失去部分价格优势，进而影响全球服装供应链的份额分配。",
+      "who_is_impacted": [
+        "印度服装出口商",
+        "欧美品牌的印度供应商",
+        "印度棉花纺纱企业",
+        "全球服装原材料贸易商"
+      ],
+      "next_actions": [
+        "审查印度供应商合同中的成本传导条款",
+        "评估将部分订单从印度转移至成本更低地区的可行性",
+        "追踪印度政府对服装业的补贴与政策支持动态",
+        "关注伊朗局势对中东农业投入品贸易的持续影响"
+      ],
+      "risk_notes": [
+        "三重压力短期内难以缓解",
+        "伊朗战争风险的升级可能导致更大范围的大宗商品价格波动"
+      ],
+      "references": [
+        "https://apparelresources.com",
+        "https://southeastagnet.com"
       ]
     }
   ]
