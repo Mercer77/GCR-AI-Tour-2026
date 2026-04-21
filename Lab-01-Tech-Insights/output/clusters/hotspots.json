@@ -79,7 +79,7 @@
       ]
     },
     {
-      "hotspot_id": "H41",
+      "hotspot_id": "H40",
       "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
       "summary": "tracks=general",
       "category": "trend",
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "hotspot_id": "H49",
+      "hotspot_id": "H48",
       "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
       "summary": "tracks=general",
       "category": "trend",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "hotspot_id": "H53",
+      "hotspot_id": "H52",
       "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
       "summary": "tracks=general",
       "category": "trend",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "hotspot_id": "H59",
+      "hotspot_id": "H58",
       "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
       "summary": "tracks=general",
       "category": "trend",
@@ -231,8 +231,8 @@
       ]
     },
     {
-      "hotspot_id": "H74",
-      "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - PR Newswire",
+      "hotspot_id": "H65",
+      "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
       "summary": "tracks=general",
       "category": "trend",
       "overall_heat_score": 77,
@@ -240,8 +240,8 @@
         "source_count": 2,
         "companies": [],
         "platforms": [
-          "google-news-textile-en",
-          "google-news-textile-machinery"
+          "google-news-garment-manufacturing",
+          "google-news-textile-en"
         ]
       },
       "derived_tracks": [
@@ -252,17 +252,55 @@
       "samples": [
         {
           "platform": "google-news-textile-en",
-          "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - PR Newswire",
-          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxONGd5NzlweUhKZURuWmowNExaaWJBVDlJS0R4bk83WDZpTk4xNk1Qam8wUzZGQ3lFRUJSN3EteWhfZnl0UWxnNTE4dzFqWUdCUkpmQVFycnkza0hJdl96RUNUVmxjYWpqMHVWYUZQY2QzMF9GN3JmVHJCUjRDTi1xV3Znc01KTGFIWFd6bnJNOE9pbGk0bmdtZ1p3X1BMRnRqRFQ1aUxtZEgxYWpkanoyWW5XWHhpdV9jcGJUMHhqd1ladFhnNHFqS2NVcl91VjNCbXFWWFkxYXNoYXM0TTdLRmFRUUU4VXhJWVFfWE5CanF4MTBQRXlxUmtNdFIyMUhpSkFqMTB2REFUUQ?oc=5",
-          "published_at": "2026-04-16T07:27:00Z",
+          "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5",
+          "published_at": "2026-04-17T05:00:00Z",
           "company": null,
           "signal_level": "A"
         },
         {
+          "platform": "google-news-garment-manufacturing",
+          "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5",
+          "published_at": "2026-04-17T05:00:00Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H111",
+      "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-garment-manufacturing",
+          "google-news-textile-machinery"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
           "platform": "google-news-textile-machinery",
-          "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - TNGlobal",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTElwQ2gyNVQtTXozQnp0T3JIaFZEbVVCWjZtc1dSY1c4ZGFQT1BxSGpjQjc0eVNURmR5T0JGUXR3V3JkdXA5RlM2Y2VnQTNHMGRMOFl1aHBQNG1uNUxpNW1TX2pMa29jUVRmVUtuMU9nbURvSkZBRF9GTWl2Y0ZwcUpIdkd2V1lqNVpUV0hpdmp1WnQ3LTU4Mkc4cXB2MEdrR2JEZFZMR29qNl9EMS11a0RkQWVqTUc1NHlocFRlWmI3SVFhdDJ5eTRzc3p2bE1CbTYwUnRWXzFhaUdqR05NNXV5cw?oc=5",
-          "published_at": "2026-04-16T08:54:45Z",
+          "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
+          "published_at": "2026-04-15T21:16:05Z",
+          "company": null,
+          "signal_level": "B"
+        },
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
+          "published_at": "2026-04-15T21:16:05Z",
           "company": null,
           "signal_level": "B"
         }
@@ -379,35 +417,6 @@
           "title": "武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKVEpESDRTOWZ2QlE3WFV2TUxmZ1oycmEyaHlheXVLcklXSzNncS1LU3h4RXM4c3Z0NFNSSjBQVE5ocXZvUjJqWTFUR1ZKUlpTS3RNRVdBQzk?oc=5",
           "published_at": "2026-04-20T14:10:41Z",
-          "company": null,
-          "signal_level": "S"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H05",
-      "title": "【调研快报】深纺织A接待线上参与公司2025年度网上业绩说明会的投资者调研 - 东方财富",
-      "summary": "tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
-      "coverage": {
-        "source_count": 1,
-        "companies": [],
-        "platforms": [
-          "google-news-textile-zh"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "google-news-textile-zh",
-          "title": "【调研快报】深纺织A接待线上参与公司2025年度网上业绩说明会的投资者调研 - 东方财富",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KTnRseXgzS0JoY2pISE1pTFAxTDRwMlp0MlhKM3l6NXAtbnE2NS16NGw3c0hlOXNhVUFiWWFxR29qWmUzV3RjYkg4cHhoR2NkWHpNUUpqbzVlaERacFJMYg?oc=5",
-          "published_at": "2026-04-20T11:35:28Z",
           "company": null,
           "signal_level": "S"
         }

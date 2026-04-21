@@ -1,8 +1,8 @@
 {
   "window": {
     "time_window_hours": 168,
-    "cutoff": "2026-04-14T06:32:46.260381Z",
-    "generated_at": "2026-04-21T06:32:46.260381Z"
+    "cutoff": "2026-04-14T06:37:04.064359Z",
+    "generated_at": "2026-04-21T06:37:04.064359Z"
   },
   "sources": [
     {
@@ -57,7 +57,7 @@
       "url": "https://news.google.com/rss/search?q=cotton%20market%20when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
       "file": "/Users/mqc/Documents/工作/code_workspace/Microsoft AI demo/GCR-AI-Tour-2026/Lab-01-Tech-Insights/output/signals/google-news-cotton-market.xml",
       "parsed": 30,
-      "kept": 14,
+      "kept": 15,
       "parse_error": null,
       "company": null,
       "signal_level": "A",
@@ -72,7 +72,7 @@
       "url": "https://news.google.com/rss/search?q=textile%20machinery%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
       "file": "/Users/mqc/Documents/工作/code_workspace/Microsoft AI demo/GCR-AI-Tour-2026/Lab-01-Tech-Insights/output/signals/google-news-textile-machinery.xml",
       "parsed": 30,
-      "kept": 11,
+      "kept": 12,
       "parse_error": null,
       "company": null,
       "signal_level": "B",
@@ -87,7 +87,7 @@
       "url": "https://news.google.com/rss/search?q=garment%20manufacturing%20when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
       "file": "/Users/mqc/Documents/工作/code_workspace/Microsoft AI demo/GCR-AI-Tour-2026/Lab-01-Tech-Insights/output/signals/google-news-garment-manufacturing.xml",
       "parsed": 30,
-      "kept": 20,
+      "kept": 22,
       "parse_error": null,
       "company": null,
       "signal_level": "B",
@@ -693,29 +693,6 @@
       "language": "en"
     },
     {
-      "platform": "google-news-textile-en",
-      "platform_key": "google-news-textile-en",
-      "source_type": "rss",
-      "title": "Euratex seeks action as European textiles face third year of decline - Yahoo Finance",
-      "title_norm": "euratex seeks action as european textiles face third year of decline yahoo finance",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNR01wUk9fTWdsdHZVTTVSNHl4NVJfLU5BZ1NPRC1TNEFWZzB1LV9KZkNUazJOa0xSbUU2b29GS3NNMEUtaDJvWjZYNFdwT09rWlllQ1plZ0tBWXlzTGVOTGJWZ3lhVjFYYkZsaXJGWXZ6bUtHM3ZLZERidjAyOVBEd0N6WDlQQ2Z4a3BUVHJXbGpmRndxbTJsUW9mUGNvd2FhbF9wcVNn?oc=5",
-      "published_at": "2026-04-20T11:32:42Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNR01wUk9fTWdsdHZVTTVSNHl4NVJfLU5BZ1NPRC1TNEFWZzB1LV9KZkNUazJOa0xSbUU2b29GS3NNMEUtaDJvWjZYNFdwT09rWlllQ1plZ0tBWXlzTGVOTGJWZ3lhVjFYYkZsaXJGWXZ6bUtHM3ZLZERidjAyOVBEd0N6WDlQQ2Z4a3BUVHJXbGpmRndxbTJsUW9mUGNvd2FhbF9wcVNn?oc=5\" target=\"_blank\">Euratex seeks action a…",
-      "company": null,
-      "signal_level": "A",
-      "include_keywords": [
-        "textile",
-        "fabric",
-        "yarn",
-        "mill",
-        "spinning"
-      ],
-      "tracks": [
-        "general"
-      ],
-      "language": "en"
-    },
-    {
       "platform": "google-news-textile-zh",
       "platform_key": "google-news-textile-zh",
       "source_type": "rss",
@@ -1009,28 +986,6 @@
       "language": "mixed"
     },
     {
-      "platform": "google-news-sustainable-textile",
-      "platform_key": "google-news-sustainable-textile",
-      "source_type": "rss",
-      "title": "Earth Day 2026: How material innovation is shaping the future of sustainable fashion - MSN",
-      "title_norm": "earth day 2026 how material innovation is shaping the future of sustainable fashion msn",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQb1RPbEJoVlpsOEV4bXZtREtnUG5fVmtIT0JTaUlpd2lHOEtqNWRqVWhoZ0dCNHJoc1RwUUFUMWlBRVJWUGR6R3EtVlpXeHR5emJScmx0UFFqVHkycTFuMGt0RXVGV09iOXkwQkJ1aWZram1ZNmhFNG4yNGg1TExKcVBVWjJ5R1RrNF9hblVsWHVVV21LZ3VGQ0pZX0QzM1VmVmphQUpEb0xfa2hXbXhqaWpyYjM5b1NEYmpiR3c2ZUxqX1c1RFBsUGJieHM?oc=5",
-      "published_at": "2026-04-18T15:01:12Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQb1RPbEJoVlpsOEV4bXZtREtnUG5fVmtIT0JTaUlpd2lHOEtqNWRqVWhoZ0dCNHJoc1RwUUFUMWlBRVJWUGR6R3EtVlpXeHR5emJScmx0UFFqVHkycTFuMGt0RXVGV09iOXkwQkJ1aWZram1ZNmhFNG4yNGg1TExKcVBVWjJ5R1RrNF9hblVsWHVVV21LZ3VGQ0pZX0QzM1VmVmphQUpEb0xfa2hXbXhqaWpyYjM5b1NEYmpiR3c2ZUxqX1c1RFBsU…",
-      "company": null,
-      "signal_level": "A",
-      "include_keywords": [
-        "sustainable",
-        "recycled fiber",
-        "circular textile",
-        "carbon"
-      ],
-      "tracks": [
-        "general"
-      ],
-      "language": "en"
-    },
-    {
       "platform": "google-news-textile-zh",
       "platform_key": "google-news-textile-zh",
       "source_type": "rss",
@@ -1115,6 +1070,29 @@
         "cotlook",
         "price",
         "commodity"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "google-news-textile-en",
+      "platform_key": "google-news-textile-en",
+      "source_type": "rss",
+      "title": "Texprocil refutes United States Trade Representative allegations on Indian cotton textile sector - The Hindu",
+      "title_norm": "texprocil refutes united states trade representative allegations on indian cotton textile sector the hindu",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNamNDRTc2ZlpQaU85Q2tST1R4WUp2ZUdUMTBpRTBJaXJ3bmNtN2RnYUo5eGZPTGdmSjZhSl84Y0V6U0hralhQOThDVW4wYkNMYUpael9kQjdpUTkyb2VmWGFqYVdqSjh1SDJFV29ELWJoWWZaRUU3NEE0dHRqRF8wRkladWNtUE9GdGhsRlBZb0p0amxqVElWYUQ4aUZQRF9BSDR0QzMwNjdrMlVDdjhSSHlQMGZFYWZqNzZuZkF6VmFodkRJUVRqVllrY2hLaXdtdmpvTG9UNVFndUwzM3VkNFRyMEV2bzJPZmRBMUl5VzLSAfcBQVVfeXFMUDJhZzhvVkF4aHpVaU14X19KODdRYzVJd3g4MkJlbjBCdzV2LVBscnJXZk9kUGNzV1dtV1FHaVYyZHlhYTkzUXdYSFdIa2d4TWZCc1lFMmhhRldwMFFDUmJWaE12dG1OdmdiUm5wS0JKZFBvZktPVm5hVXYyR0k1NnZRY0RRbXByVHdOSG42dUVQX2NJMHhZLXEtcXpsRjQtS2pGRzNFYWU2UlpDMmloNFhhSy1jWnNNTmRrb0lHSmRhMExoLVN4YTBrSE8zUEdnQjBTd3VveExiRnJKTGJrVGo3SUt0VmRZWVkzdUJTYzZCUTd4akh2Yw?oc=5",
+      "published_at": "2026-04-18T09:39:31Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxNamNDRTc2ZlpQaU85Q2tST1R4WUp2ZUdUMTBpRTBJaXJ3bmNtN2RnYUo5eGZPTGdmSjZhSl84Y0V6U0hralhQOThDVW4wYkNMYUpael9kQjdpUTkyb2VmWGFqYVdqSjh1SDJFV29ELWJoWWZaRUU3NEE0dHRqRF8wRkladWNtUE9GdGhsRlBZb0p0amxqVElWYUQ4aUZQRF9BSDR0QzMwNjdrMlVDdjhSSHlQMGZFYWZqNzZuZkF6VmFodkRJUVRqV…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "textile",
+        "fabric",
+        "yarn",
+        "mill",
+        "spinning"
       ],
       "tracks": [
         "general"
@@ -1328,29 +1306,6 @@
       "platform": "google-news-textile-en",
       "platform_key": "google-news-textile-en",
       "source_type": "rss",
-      "title": "Inside India newsletter: Tariffs and Iran war threaten India's $100 billion garments export goal - MSN",
-      "title_norm": "inside india newsletter tariffs and iran war threaten india s 100 billion garments export goal msn",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNzZ4U09PeXVMX1hhY0ZrMTNFT3IySXpnN0ZnTmQxOVJFaXMtYzhjaW1FV1BqUnhJRnpkSkVXRnhDelpobGNYalZHQzJGQlR6Zmp1ZE1uOXV1ZmVBOEZha3R6M282RFlhdFViaWI4TEJuNGlaVzNRVlgzbVpRR2MwYVlLMnJNWWtERHBSUWU1Q3dERy1ia1h3R0ZDTjAtQTVxLXh1N3lJbE5HekdscGM0NURrZ19Xc3hvZU5KMFRmajVEazVRMlRwdHZqcUhvVUpyOGstVjgzQThxVEFTZ3c?oc=5",
-      "published_at": "2026-04-17T15:35:05Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNzZ4U09PeXVMX1hhY0ZrMTNFT3IySXpnN0ZnTmQxOVJFaXMtYzhjaW1FV1BqUnhJRnpkSkVXRnhDelpobGNYalZHQzJGQlR6Zmp1ZE1uOXV1ZmVBOEZha3R6M282RFlhdFViaWI4TEJuNGlaVzNRVlgzbVpRR2MwYVlLMnJNWWtERHBSUWU1Q3dERy1ia1h3R0ZDTjAtQTVxLXh1N3lJbE5HekdscGM0NURrZ19Xc3hvZU5KMFRmajVEazVRMlRwd…",
-      "company": null,
-      "signal_level": "A",
-      "include_keywords": [
-        "textile",
-        "fabric",
-        "yarn",
-        "mill",
-        "spinning"
-      ],
-      "tracks": [
-        "general"
-      ],
-      "language": "en"
-    },
-    {
-      "platform": "google-news-textile-en",
-      "platform_key": "google-news-textile-en",
-      "source_type": "rss",
       "title": "Kornit Digital Acquires PrintFactory To Accelerate The Industry’s Transition To Digital, On-Demand Production - Textile World",
       "title_norm": "kornit digital acquires printfactory to accelerate the industry s transition to digital on demand production textile world",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOR1FOYk1xYi14WXJRU2pqZkw3UXBfMm5seDF3RTM5S3RqUVpsMmVkSGdkaGhpclV3VVBQaFFUOXV3QTFtMzRBZ29MRmdmVGxZejM4UHlGYkVJRkZ4LW4zX1VDR2FWdW5nRV9qblVZWU9nbUJiRHpXNExveTI3Qi1ILUxsRUNEdl9WbklHOGhEcG80VmZhT0RDQk1xQWJORG9aNWhxWEVBRWNXY2RlM2JONUlVSTJiWkhCZDhEZXZHSENINkZQYldNbTRNUnJyY20zQTVDb3dZY1FiZTZQWVhxaVlDZ2ZpU1p2eklBV09XNjA?oc=5",
@@ -1409,6 +1364,28 @@
         "yarn",
         "mill",
         "spinning"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "google-news-sustainable-textile",
+      "platform_key": "google-news-sustainable-textile",
+      "source_type": "rss",
+      "title": "INDA 2026 Supply Report Highlights Resilient Growth And Sustainability Focus In North American Nonwovens Industry - Textile World",
+      "title_norm": "inda 2026 supply report highlights resilient growth and sustainability focus in north american nonwovens industry textile world",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPa243LTUtRDFaMTI4TFRHOS1tOXhSN0VmMDJYWk9iLWlHRE8xbGFkOGhKX0V5Q2M2WW5hdjZETkluR1FCdEN4Um5IWXhRWWgtVTJ3S1g3aHhCbmhoSFZBVTM2bGdhUzJadE1yem40STdleS1NZXNzN1FJMjBfRGUxQTJQVENGWnZjRVlmRlFNY2NEQVFweUFWMjZ3aFpaYmN5dEZkTkVqS0xCaGFvcFZ3U3ZqVUxxR1Z2ZFNlTXEtM2p5eXk2RmhFYlNqVDdNWmFxYjdpWTlsblZqSnQ4NWJYcnBFR2t3cTdQOGhnU1l2alNGelRRa2lUTg?oc=5",
+      "published_at": "2026-04-17T14:32:14Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxPa243LTUtRDFaMTI4TFRHOS1tOXhSN0VmMDJYWk9iLWlHRE8xbGFkOGhKX0V5Q2M2WW5hdjZETkluR1FCdEN4Um5IWXhRWWgtVTJ3S1g3aHhCbmhoSFZBVTM2bGdhUzJadE1yem40STdleS1NZXNzN1FJMjBfRGUxQTJQVENGWnZjRVlmRlFNY2NEQVFweUFWMjZ3aFpaYmN5dEZkTkVqS0xCaGFvcFZ3U3ZqVUxxR1Z2ZFNlTXEtM2p5eXk2RmhFY…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "sustainable",
+        "recycled fiber",
+        "circular textile",
+        "carbon"
       ],
       "tracks": [
         "general"
@@ -1641,6 +1618,29 @@
       "language": "en"
     },
     {
+      "platform": "google-news-textile-en",
+      "platform_key": "google-news-textile-en",
+      "source_type": "rss",
+      "title": "Fashion industry - Design, Manufacturing, Trends - Britannica",
+      "title_norm": "fashion industry design manufacturing trends britannica",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5",
+      "published_at": "2026-04-17T05:00:00Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPVDFxWEd4b19kVUtXdzVmRC0wRlIxSHUzLUlmamREdVdIeHczdHJRMUV2Zk93VjBBTTFSQ0VrOUhSUGZpUXQ4d04yNTBMaHV1VUNKOUVidVh6aXhoS3RuSjE0N0hMaDR1MWo1UGdIOHJ2M2xRV05NR2hmMW1ZVE9hZ29LMV9Ncm8?oc=5\" target=\"_blank\">Fashion industry - Design, Manufacturing, Trends</a>&nbsp;&nbsp…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "textile",
+        "fabric",
+        "yarn",
+        "mill",
+        "spinning"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
       "platform": "google-news-sustainable-textile",
       "platform_key": "google-news-sustainable-textile",
       "source_type": "rss",
@@ -1707,20 +1707,21 @@
       "language": "en"
     },
     {
-      "platform": "google-news-garment-manufacturing",
-      "platform_key": "google-news-garment-manufacturing",
+      "platform": "google-news-textile-machinery",
+      "platform_key": "google-news-textile-machinery",
       "source_type": "rss",
-      "title": "Value Retailers Set to Outpace Premium as Apparel Growth Picks Up In Q4 FY ’26 - Apparel Resources",
-      "title_norm": "value retailers set to outpace premium as apparel growth picks up in q4 fy 26 apparel resources",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdE1ETWVFdVFmR0FTUlZWYnlMZEZHWWN2M3V3cGxnOXlneHRpdmJaQmJQd3N4blFibGkwMFhHY3ZTandmYkpRMl94NFJBQXpaNHE1b1c0ZV9qejI4ZEgyUXZBRms3RlpMeUtfbE80X1A4TkNVTi05bDU4WldzRi1iNWpxSE41eXhiUWx6R1BDbWh1WHBMLXBTc2ZINXR2WEYxT2lmVHRKTHZkY0otajVGei1rNmI5QjQ?oc=5",
-      "published_at": "2026-04-20T12:32:06Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNdE1ETWVFdVFmR0FTUlZWYnlMZEZHWWN2M3V3cGxnOXlneHRpdmJaQmJQd3N4blFibGkwMFhHY3ZTandmYkpRMl94NFJBQXpaNHE1b1c0ZV9qejI4ZEgyUXZBRms3RlpMeUtfbE80X1A4TkNVTi05bDU4WldzRi1iNWpxSE41eXhiUWx6R1BDbWh1WHBMLXBTc2ZINXR2WEYxT2lmVHRKTHZkY0otajVGei1rNmI5QjQ?oc=5\" target=\"_blank\"…",
+      "title": "Türkiye rolling out incentives to ease Istanbul's development burden | Daily Sabah - Daily Sabah",
+      "title_norm": "t rkiye rolling out incentives to ease istanbul s development burden daily sabah daily sabah",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNR3VHRUMtWENHaU9YSTdkZGlHUUN6ckpnOVVfTnk1dzVSLUZCVGE0WlhpTUR1NDdJU1F3STBlOElfRFNzVjRNMy1ORW55cFNfbklINE4wUjRpM3IyMy1WenFGNUszc08wR3RFWS16WW4teVlzeURVTEg2aGRWNllmSklReS03eTZKeDh2WXBpdVFsOEhzX1EzV2ZyMTdWT3ZZbW9oZUlMaE9LeHJDZG5NbncxdUVFQdIBtgFBVV95cUxNR3VHRUMtWENHaU9YSTdkZGlHUUN6ckpnOVVfTnk1dzVSLUZCVGE0WlhpTUR1NDdJU1F3STBlOElfRFNzVjRNMy1ORW55cFNfbklINE4wUjRpM3IyMy1WenFGNUszc08wR3RFWS16WW4teVlzeURVTEg2aGRWNllmSklReS03eTZKeDh2WXBpdVFsOEhzX1EzV2ZyMTdWT3ZZbW9oZUlMaE9LeHJDZG5NbncxdUVFQQ?oc=5",
+      "published_at": "2026-04-20T12:56:58Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNR3VHRUMtWENHaU9YSTdkZGlHUUN6ckpnOVVfTnk1dzVSLUZCVGE0WlhpTUR1NDdJU1F3STBlOElfRFNzVjRNMy1ORW55cFNfbklINE4wUjRpM3IyMy1WenFGNUszc08wR3RFWS16WW4teVlzeURVTEg2aGRWNllmSklReS03eTZKeDh2WXBpdVFsOEhzX1EzV2ZyMTdWT3ZZbW9oZUlMaE9LeHJDZG5NbncxdUVFQdIBtgFBVV95cUxNR3VHRUMtW…",
       "company": null,
       "signal_level": "B",
       "include_keywords": [
-        "garment",
-        "apparel",
-        "supply chain",
+        "loom",
+        "weaving",
+        "knitting",
+        "automation",
         "factory"
       ],
       "tracks": [
@@ -1888,21 +1889,21 @@
       "language": "en"
     },
     {
-      "platform": "google-news-garment-manufacturing",
-      "platform_key": "google-news-garment-manufacturing",
+      "platform": "google-news-cotton-market",
+      "platform_key": "google-news-cotton-market",
       "source_type": "rss",
-      "title": "New approach to garment design could significantly reduce waste - Massey University",
-      "title_norm": "new approach to garment design could significantly reduce waste massey university",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPam16VjI4ZXdCZ2ZqVWRPbFFfeUg4V3h4R1dTS0Vna0RTaDFoM2lQQWdBdm44Q3BJUkZnRHA0MFp6OS1RUXpJSU45Sl9MR1VGekRlQTdhSWZZM1NHNDZJVy1xZkhVS0R6aXNMQzhqM25oTkt6YmQ5QVFNYWZMSlk2NkJuems3NzhkcDg0MWlERjZqMXFiX3ZzaTNsRmlxWU42a3c?oc=5",
-      "published_at": "2026-04-20T06:36:20Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPam16VjI4ZXdCZ2ZqVWRPbFFfeUg4V3h4R1dTS0Vna0RTaDFoM2lQQWdBdm44Q3BJUkZnRHA0MFp6OS1RUXpJSU45Sl9MR1VGekRlQTdhSWZZM1NHNDZJVy1xZkhVS0R6aXNMQzhqM25oTkt6YmQ5QVFNYWZMSlk2NkJuems3NzhkcDg0MWlERjZqMXFiX3ZzaTNsRmlxWU42a3c?oc=5\" target=\"_blank\">New approach to garment des…",
+      "title": "USDA Payments Support Cotton, Wool Demand as Lamb Board Launches Sustainability Effort - RFD-TV",
+      "title_norm": "usda payments support cotton wool demand as lamb board launches sustainability effort rfd tv",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaTJweHNXZXJRaEJxSEh5dG9XeDhyY013WjB0Q1NicldwWU1UZUpNNDVkTVJzT1ZSd0t6WmtsX0tFdnNUUE5USjFQSGRPQzRDdnpPS3g3Ri1xT3ZtcXNVVm9pMl93MEZNbGIzd0xkLVZNM2RUY0FNWGtDMmx2b2ZPMDNrZXMzeVlwb19naVJ2azJseGdHUTc3R0s1TEx4alpUNnVmUjZWZ2s1cUk?oc=5",
+      "published_at": "2026-04-16T15:59:02Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaTJweHNXZXJRaEJxSEh5dG9XeDhyY013WjB0Q1NicldwWU1UZUpNNDVkTVJzT1ZSd0t6WmtsX0tFdnNUUE5USjFQSGRPQzRDdnpPS3g3Ri1xT3ZtcXNVVm9pMl93MEZNbGIzd0xkLVZNM2RUY0FNWGtDMmx2b2ZPMDNrZXMzeVlwb19naVJ2azJseGdHUTc3R0s1TEx4alpUNnVmUjZWZ2s1cUk?oc=5\" target=\"_blank\">USDA Payments S…",
       "company": null,
-      "signal_level": "B",
+      "signal_level": "A",
       "include_keywords": [
-        "garment",
-        "apparel",
-        "supply chain",
-        "factory"
+        "cotton",
+        "cotlook",
+        "price",
+        "commodity"
       ],
       "tracks": [
         "general"
@@ -2066,6 +2067,51 @@
       "language": "en"
     },
     {
+      "platform": "google-news-garment-manufacturing",
+      "platform_key": "google-news-garment-manufacturing",
+      "source_type": "rss",
+      "title": "Middle East turmoil puts India’s gems, apparel exports and energy flows at risk: Report - MSN",
+      "title_norm": "middle east turmoil puts india s gems apparel exports and energy flows at risk report msn",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPUExfOC1GbHo5TE1JWGtfU2dfUVRqZ0FLMmRIdVlzSjk2V29fLW5YYjBuTEdmdkVZTm1CZEJCQlZmRjVMYThCcENpU1V4UlhCVzByTmNhcE1Hd1FUQ3BIUTJ1cjBKV0xzemxMU2JtelBMdWhuLXYxZVV6VDR5YThFWWtkYmNWVV9lV2tvNUxOVWU4ejdqdVB0dXhTS0JmQ1B3QTZFbmh1Qm01TWRMbmYzTGE2c1V0LVVmb1YtQjgzY1FQc3IySlFDNHBqZlFMTUgwX0wzb2M3eEpsVzVxNkVWZ25rTQ?oc=5",
+      "published_at": "2026-04-19T16:24:18Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxPUExfOC1GbHo5TE1JWGtfU2dfUVRqZ0FLMmRIdVlzSjk2V29fLW5YYjBuTEdmdkVZTm1CZEJCQlZmRjVMYThCcENpU1V4UlhCVzByTmNhcE1Hd1FUQ3BIUTJ1cjBKV0xzemxMU2JtelBMdWhuLXYxZVV6VDR5YThFWWtkYmNWVV9lV2tvNUxOVWU4ejdqdVB0dXhTS0JmQ1B3QTZFbmh1Qm01TWRMbmYzTGE2c1V0LVVmb1YtQjgzY1FQc3IySlFDN…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [
+        "garment",
+        "apparel",
+        "supply chain",
+        "factory"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "google-news-textile-en",
+      "platform_key": "google-news-textile-en",
+      "source_type": "rss",
+      "title": "Anti-Counterfeit Tech Firm and European Center of Innovative Textiles Introduce Textile Traceability Tool - WWD",
+      "title_norm": "anti counterfeit tech firm and european center of innovative textiles introduce textile traceability tool wwd",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNVZIUnRfczNmaTUzY25xeHBSZlV4RG4wUEhhOXFBRk1fRjVDOHVUNFBrNGQ0TWFiT3RyckxfSXdnU1U3dzg1M2o1R2RMaFVpczdGaEk4Wlp3QVpYblRNbHc4ZUFrOGhsYWhIcDZzOU1saGhjLWR3RzZRdGRoaVR3YVJnN2lZclNwWkVzSDNXNjhiUlNHbnpydS1aZG5jalZZYUlpUlVUNEpTUHdSeENyREU2elZSY0dHV1R5YkUwVXZadzluUEZPMFM2Nlp1MkhtV2dMOG5Mdw?oc=5",
+      "published_at": "2026-04-15T23:22:01Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNVZIUnRfczNmaTUzY25xeHBSZlV4RG4wUEhhOXFBRk1fRjVDOHVUNFBrNGQ0TWFiT3RyckxfSXdnU1U3dzg1M2o1R2RMaFVpczdGaEk4Wlp3QVpYblRNbHc4ZUFrOGhsYWhIcDZzOU1saGhjLWR3RzZRdGRoaVR3YVJnN2lZclNwWkVzSDNXNjhiUlNHbnpydS1aZG5jalZZYUlpUlVUNEpTUHdSeENyREU2elZSY0dHV1R5YkUwVXZadzluUEZPM…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "textile",
+        "fabric",
+        "yarn",
+        "mill",
+        "spinning"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
       "platform": "google-news-sustainable-textile",
       "platform_key": "google-news-sustainable-textile",
       "source_type": "rss",
@@ -2104,6 +2150,28 @@
         "yarn",
         "mill",
         "spinning"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "google-news-garment-manufacturing",
+      "platform_key": "google-news-garment-manufacturing",
+      "source_type": "rss",
+      "title": "7 Key Factors Driving Productivity Tips Apple Watch That Really Work - The Detroit Bureau",
+      "title_norm": "7 key factors driving productivity tips apple watch that really work the detroit bureau",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd0tRUzBzSW9pb24zWERGRGZvenM3cEs4VDdKd2l6MkxrWldsdUllTXpqeWxaZnFuNW1DaS15U0hYNmdmSUcxQ2tyNE1UdWtyOHVjMng3VkhpdWdVSW03ejY3UmFUanN3TzdnQ1dWN3FZZ2l3eWJjNm1teXRsT0pOVldnYzJjS0IzcHVZNWZMUXRWbHRkZm1DSFpqdUtTQzVwWno4Y0JHS05UbHI1b0sxUHZoWC12SnhKVUpkMTFMYlk?oc=5",
+      "published_at": "2026-04-19T06:22:08Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd0tRUzBzSW9pb24zWERGRGZvenM3cEs4VDdKd2l6MkxrWldsdUllTXpqeWxaZnFuNW1DaS15U0hYNmdmSUcxQ2tyNE1UdWtyOHVjMng3VkhpdWdVSW03ejY3UmFUanN3TzdnQ1dWN3FZZ2l3eWJjNm1teXRsT0pOVldnYzJjS0IzcHVZNWZMUXRWbHRkZm1DSFpqdUtTQzVwWno4Y0JHS05UbHI1b0sxUHZoWC12SnhKVUpkMTFMYlk?oc=5\" tar…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [
+        "garment",
+        "apparel",
+        "supply chain",
+        "factory"
       ],
       "tracks": [
         "general"
@@ -2495,29 +2563,6 @@
       "language": "en"
     },
     {
-      "platform": "google-news-textile-en",
-      "platform_key": "google-news-textile-en",
-      "source_type": "rss",
-      "title": "Indian auto, textile production hit as gas crunch drives workers home - Nikkei Asia",
-      "title_norm": "indian auto textile production hit as gas crunch drives workers home nikkei asia",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQUszYm43a2RXNEFuV2xmejZ2bXhDV3d6SFM3RG1yUkRIZlEwZW5MQkpvUnhmdDUyU1pDMElqSDhjaEU2ZzdUTTNWTFVRckY5dVNkNndIWlVwNTZkZ0E5ckpnaWFsWjBSdEVDeTd0SjZDN01tT2sxWmRCdTVfQjhYd3prSDBEaDlaUTNJNUJRZTZMRXJNWVZ5aW5sdHl5cmpFZXdfd2hWeTFXeWpyRUhSS0piY2ltOUNjOXIwdGFFNUVraTQ?oc=5",
-      "published_at": "2026-04-14T06:37:00Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQUszYm43a2RXNEFuV2xmejZ2bXhDV3d6SFM3RG1yUkRIZlEwZW5MQkpvUnhmdDUyU1pDMElqSDhjaEU2ZzdUTTNWTFVRckY5dVNkNndIWlVwNTZkZ0E5ckpnaWFsWjBSdEVDeTd0SjZDN01tT2sxWmRCdTVfQjhYd3prSDBEaDlaUTNJNUJRZTZMRXJNWVZ5aW5sdHl5cmpFZXdfd2hWeTFXeWpyRUhSS0piY2ltOUNjOXIwdGFFNUVraTQ?oc=5\"…",
-      "company": null,
-      "signal_level": "A",
-      "include_keywords": [
-        "textile",
-        "fabric",
-        "yarn",
-        "mill",
-        "spinning"
-      ],
-      "tracks": [
-        "general"
-      ],
-      "language": "en"
-    },
-    {
       "platform": "google-news-garment-manufacturing",
       "platform_key": "google-news-garment-manufacturing",
       "source_type": "rss",
@@ -2654,28 +2699,6 @@
       "platform": "google-news-garment-manufacturing",
       "platform_key": "google-news-garment-manufacturing",
       "source_type": "rss",
-      "title": "Brother Introduces Print+ All-Inclusive Subscription Powering Scalable Direct-To-Garment Production - Industry Analysts, Inc.",
-      "title_norm": "brother introduces print all inclusive subscription powering scalable direct to garment production industry analysts inc",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdDhKY3M1cExJZS1vUGdCX3VrQllnaGNWMk1IOS1yMDk3VV9NM0dISV9zLTc1VVFDa0xpSDBabl9zYmlYcG1ERGJtdVltdlhjOE43X2NZMmJocmVqMWxQSm8zb0ZKUmd4UGk3QzJjZkJVeWdpZUdpaHpCMm81MDdMbE9vTExXX0dvN0JNa1lxVEFJNjc5SUxkZ0FmWHdWUUR3cEZXXzJUMVB3c2RIYkdzX2hmZmlKN3BUZTFLSHlvWndzbjlWSzVj?oc=5",
-      "published_at": "2026-04-16T15:45:40Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNdDhKY3M1cExJZS1vUGdCX3VrQllnaGNWMk1IOS1yMDk3VV9NM0dISV9zLTc1VVFDa0xpSDBabl9zYmlYcG1ERGJtdVltdlhjOE43X2NZMmJocmVqMWxQSm8zb0ZKUmd4UGk3QzJjZkJVeWdpZUdpaHpCMm81MDdMbE9vTExXX0dvN0JNa1lxVEFJNjc5SUxkZ0FmWHdWUUR3cEZXXzJUMVB3c2RIYkdzX2hmZmlKN3BUZTFLSHlvWndzbjlWSzVj?…",
-      "company": null,
-      "signal_level": "B",
-      "include_keywords": [
-        "garment",
-        "apparel",
-        "supply chain",
-        "factory"
-      ],
-      "tracks": [
-        "general"
-      ],
-      "language": "en"
-    },
-    {
-      "platform": "google-news-garment-manufacturing",
-      "platform_key": "google-news-garment-manufacturing",
-      "source_type": "rss",
       "title": "Top 10 Zipper Types for Garment Accessories Sourcing - openPR.com",
       "title_norm": "top 10 zipper types for garment accessories sourcing openpr com",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ1g1cDcxTXFEU1pTN3FuLTRTZ0s1ak52RHhxNlRqckZtMGMtNGRtMlA1T2tJM21TYXZFdzdyNEJpUTRpdWROVHB5cF9tMWM4ODFwdzA0c1V4bTRyQVRrUlBQTkI4MmtmOFpkTDA0Um1TQkVnendwVUtUckpUck5mczdWQ1hMN19nZVRfekU2SGFzZw?oc=5",
@@ -2718,14 +2741,36 @@
       "language": "en"
     },
     {
+      "platform": "google-news-garment-manufacturing",
+      "platform_key": "google-news-garment-manufacturing",
+      "source_type": "rss",
+      "title": "Vietnam textile-garment industry remains cautious despite order recovery - Theinvestor",
+      "title_norm": "vietnam textile garment industry remains cautious despite order recovery theinvestor",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMzBvWWJOZU9yYjBhOUkyQnJQNHRJWURhTWsxaThOQngybmVZZ05ZaWVUU0FXSUNFcTVnU21lbHdFTGhLcTNIWWl6TXpDQ1RCWV9PRnpxWlo1d2N1d1k2TkFnU1VuVTgyRXNjQzlNNlRWTVBoUjRzQ3ZEN21qQTdiZkNjREN3TC1YekotUmZJeGxCQkRpdG5wbllPTjVKWlRRQjBLRDZGdHRfejA?oc=5",
+      "published_at": "2026-04-16T04:38:01Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMzBvWWJOZU9yYjBhOUkyQnJQNHRJWURhTWsxaThOQngybmVZZ05ZaWVUU0FXSUNFcTVnU21lbHdFTGhLcTNIWWl6TXpDQ1RCWV9PRnpxWlo1d2N1d1k2TkFnU1VuVTgyRXNjQzlNNlRWTVBoUjRzQ3ZEN21qQTdiZkNjREN3TC1YekotUmZJeGxCQkRpdG5wbllPTjVKWlRRQjBLRDZGdHRfejA?oc=5\" target=\"_blank\">Vietnam textile…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [
+        "garment",
+        "apparel",
+        "supply chain",
+        "factory"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
       "platform": "google-news-textile-machinery",
       "platform_key": "google-news-textile-machinery",
       "source_type": "rss",
-      "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - TNGlobal",
-      "title_norm": "xtransfer showcases seamless cross border payment solutions at indo intertex inatex 2026 to empower the textile smes tnglobal",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTElwQ2gyNVQtTXozQnp0T3JIaFZEbVVCWjZtc1dSY1c4ZGFQT1BxSGpjQjc0eVNURmR5T0JGUXR3V3JkdXA5RlM2Y2VnQTNHMGRMOFl1aHBQNG1uNUxpNW1TX2pMa29jUVRmVUtuMU9nbURvSkZBRF9GTWl2Y0ZwcUpIdkd2V1lqNVpUV0hpdmp1WnQ3LTU4Mkc4cXB2MEdrR2JEZFZMR29qNl9EMS11a0RkQWVqTUc1NHlocFRlWmI3SVFhdDJ5eTRzc3p2bE1CbTYwUnRWXzFhaUdqR05NNXV5cw?oc=5",
-      "published_at": "2026-04-16T08:54:45Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTElwQ2gyNVQtTXozQnp0T3JIaFZEbVVCWjZtc1dSY1c4ZGFQT1BxSGpjQjc0eVNURmR5T0JGUXR3V3JkdXA5RlM2Y2VnQTNHMGRMOFl1aHBQNG1uNUxpNW1TX2pMa29jUVRmVUtuMU9nbURvSkZBRF9GTWl2Y0ZwcUpIdkd2V1lqNVpUV0hpdmp1WnQ3LTU4Mkc4cXB2MEdrR2JEZFZMR29qNl9EMS11a0RkQWVqTUc1NHlocFRlWmI3SVFhdDJ5e…",
+      "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
+      "title_norm": "pattern cutting plotter machine market forecast points higher toward 2035 driven by automation in apparel indexbox",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
+      "published_at": "2026-04-15T21:16:05Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKU…",
       "company": null,
       "signal_level": "B",
       "include_keywords": [
@@ -2744,11 +2789,33 @@
       "platform": "google-news-garment-manufacturing",
       "platform_key": "google-news-garment-manufacturing",
       "source_type": "rss",
-      "title": "Vietnam textile-garment industry remains cautious despite order recovery - Theinvestor",
-      "title_norm": "vietnam textile garment industry remains cautious despite order recovery theinvestor",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMzBvWWJOZU9yYjBhOUkyQnJQNHRJWURhTWsxaThOQngybmVZZ05ZaWVUU0FXSUNFcTVnU21lbHdFTGhLcTNIWWl6TXpDQ1RCWV9PRnpxWlo1d2N1d1k2TkFnU1VuVTgyRXNjQzlNNlRWTVBoUjRzQ3ZEN21qQTdiZkNjREN3TC1YekotUmZJeGxCQkRpdG5wbllPTjVKWlRRQjBLRDZGdHRfejA?oc=5",
-      "published_at": "2026-04-16T04:38:01Z",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMzBvWWJOZU9yYjBhOUkyQnJQNHRJWURhTWsxaThOQngybmVZZ05ZaWVUU0FXSUNFcTVnU21lbHdFTGhLcTNIWWl6TXpDQ1RCWV9PRnpxWlo1d2N1d1k2TkFnU1VuVTgyRXNjQzlNNlRWTVBoUjRzQ3ZEN21qQTdiZkNjREN3TC1YekotUmZJeGxCQkRpdG5wbllPTjVKWlRRQjBLRDZGdHRfejA?oc=5\" target=\"_blank\">Vietnam textile…",
+      "title": "Pattern Cutting Plotter Machine Market Forecast Points Higher Toward 2035, Driven by Automation in Apparel - IndexBox",
+      "title_norm": "pattern cutting plotter machine market forecast points higher toward 2035 driven by automation in apparel indexbox",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKUmNscmRadEc4?oc=5",
+      "published_at": "2026-04-15T21:16:05Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ19aVlB5bXJwZmpXWC1NWllnLUdRdVAwSE41SEdUVWtRaFNxbFpYbWJaaURhdndGTmI3MTI3Tnlmd1FPZ0xRYk9jQllubEVqNHBpaHN5cjBRcjNaek8zdUZvZENTQ19PNHpoQW1mZWVxejNpVUp0Wk9fUTVWTUVmVTFUMUQzQ28zcVJQcUVxU19fQ2YxSWdhQjA5ckJEOWx2OUJHX2NyT0puM0pCSXdaZEgyYjlQS0lENmZQSjN6NUpQcklfVHFKU…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [
+        "garment",
+        "apparel",
+        "supply chain",
+        "factory"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "google-news-garment-manufacturing",
+      "platform_key": "google-news-garment-manufacturing",
+      "source_type": "rss",
+      "title": "BROTHER INTRODUCES PRINT+ ALL-INCLUSIVE SUBSCRIPTION POWERING SCALABLE DIRECT-TO-GARMENT PRODUCTION (2026-04-15) - Seeking Alpha",
+      "title_norm": "brother introduces print all inclusive subscription powering scalable direct to garment production 2026 04 15 seeking alpha",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRXl0U0NGZmVKeGo3VF93UmNrUXJidE1sV1J1T01udEZCcmhhb01SUGtxMlVGR0NRUVFoa1N1M0xzdmNxM3p2NUljUUdaOEJJUTUyYVpDV1BqZVdaQW5sX1JFQWxKbkxmWEN4ZjhOd1dLN2ZyS0ZyUzhHVWZ4Vm5nQXQ0UlcyTEZvZkxFNmZXVnpsWWtOQTlPTThESEU5VzhOUVZrUGFPQlc4SFZjcUlhMENoM3l5UjRHRjJEZC1ibmVudw?oc=5",
+      "published_at": "2026-04-15T14:00:00Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRXl0U0NGZmVKeGo3VF93UmNrUXJidE1sV1J1T01udEZCcmhhb01SUGtxMlVGR0NRUVFoa1N1M0xzdmNxM3p2NUljUUdaOEJJUTUyYVpDV1BqZVdaQW5sX1JFQWxKbkxmWEN4ZjhOd1dLN2ZyS0ZyUzhHVWZ4Vm5nQXQ0UlcyTEZvZkxFNmZXVnpsWWtOQTlPTThESEU5VzhOUVZrUGFPQlc4SFZjcUlhMENoM3l5UjRHRjJEZC1ibmVudw?oc=5\"…",
       "company": null,
       "signal_level": "B",
       "include_keywords": [
@@ -2867,6 +2934,28 @@
         "weaving",
         "knitting",
         "automation",
+        "factory"
+      ],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "google-news-garment-manufacturing",
+      "platform_key": "google-news-garment-manufacturing",
+      "source_type": "rss",
+      "title": "Worldview | How Lagos Is Driving Africa’s Circular Fashion Agenda - The Business of Fashion",
+      "title_norm": "worldview how lagos is driving africa s circular fashion agenda the business of fashion",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSDRRZkJUU3NJcUFMbHVFMVVvRzZBd1o5QWk0OWNfbnB6LVZhUHB4WnhWMHZqU1dUd1pSSFBnUTZYdWtiMWFQazNTSWtUZVdwWkVWeHR1bGhjOWVPcGNRRlNQQ3VmazlzLXRHT3BpQnVsUWNHWFkyQ3c5aS1UdWpMaV81bVNXQ2p1WFhnMThLNWh0ZnptUkR6aExGZUh3bkhEUkRyWjlIbExpNDQ2VkFSaW5OUDdwMDh2azBacTB3?oc=5",
+      "published_at": "2026-04-14T09:09:41Z",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNSDRRZkJUU3NJcUFMbHVFMVVvRzZBd1o5QWk0OWNfbnB6LVZhUHB4WnhWMHZqU1dUd1pSSFBnUTZYdWtiMWFQazNTSWtUZVdwWkVWeHR1bGhjOWVPcGNRRlNQQ3VmazlzLXRHT3BpQnVsUWNHWFkyQ3c5aS1UdWpMaV81bVNXQ2p1WFhnMThLNWh0ZnptUkR6aExGZUh3bkhEUkRyWjlIbExpNDQ2VkFSaW5OUDdwMDh2azBacTB3?oc=5\" target…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [
+        "garment",
+        "apparel",
+        "supply chain",
         "factory"
       ],
       "tracks": [

@@ -40,6 +40,8 @@ python3 Lab-01-Tech-Insights/run_local.py
 python3 -m http.server 8000 --directory Lab-01-Tech-Insights/frontend
 ```
 
+> `run_local.py` 默认输出中文报告（`--report-language zh`）。
+
 运行完成后会生成并同步以下文件：
 
 - `Lab-01-Tech-Insights/output/raw_signals.json`
