@@ -30,6 +30,33 @@ GitHub Pages (在线查看)
 
 ---
 
+## 快速本地运行（无需 gh-aw）
+
+如果你想先在本地把 Lab-01 跑通，而不依赖 GitHub Actions / gh-aw / Copilot Token，可以直接运行仓库内置的本地入口。该入口会复用同一套抓取、聚类、洞察、报告工具，并在没有 LLM 输出时自动使用确定性兜底逻辑生成完整报告。
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 Lab-01-Tech-Insights/run_local.py
+python3 -m http.server 8000 --directory Lab-01-Tech-Insights/frontend
+```
+
+运行完成后会生成并同步以下文件：
+
+- `Lab-01-Tech-Insights/output/raw_signals.json`
+- `Lab-01-Tech-Insights/output/clusters/hotspots.json`
+- `Lab-01-Tech-Insights/output/insights/insights.json`
+- `Lab-01-Tech-Insights/output/report.md`
+- `Lab-01-Tech-Insights/frontend/report.md`
+
+可选参数示例：
+
+```bash
+python3 Lab-01-Tech-Insights/run_local.py --time-window-hours 72 --top-k 8
+python3 Lab-01-Tech-Insights/run_local.py --skip-fetch
+```
+
+---
+
 ## Lab 0: 环境准备与 Fork（10 分钟）
 
 ### 前置条件

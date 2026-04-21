@@ -1,114 +1,254 @@
 {
-  "mode": "llm",
+  "mode": "fallback",
   "top_k": 12,
   "hotspots": [
     {
-      "hotspot_id": "H01",
-      "title": "AI 编码工具演进：GitHub Copilot CLI、Claude Code 与 IDE 的未来",
-      "summary": "GitHub Copilot CLI 推出多模型家族协作，Claude Code npm source map 意外曝光源码，开发者社区热议 IDE 未来。",
+      "hotspot_id": "H09",
+      "title": "Who is John Ternus, the incoming Apple CEO?",
+      "summary": "tracks=general",
       "category": "trend",
-      "overall_heat_score": 95,
+      "overall_heat_score": 77,
       "coverage": {
-        "source_count": 4,
-        "companies": [
-          "GitHub",
-          "Anthropic"
-        ],
+        "source_count": 2,
+        "companies": [],
         "platforms": [
-          "github-blog",
-          "lobsters",
-          "devto",
-          "arstechnica"
+          "hackernews",
+          "techcrunch"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "GitHub S级官方更新",
-        "Claude Code源码泄露",
-        "开发者社区高活跃"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
-          "platform": "github-blog",
-          "title": "GitHub Copilot CLI combines model families for a second opinion",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/",
-          "published_at": "2026-04-06T21:53:49Z",
-          "company": "GitHub",
-          "signal_level": "S"
+          "platform": "techcrunch",
+          "title": "Who is John Ternus, the incoming Apple CEO?",
+          "url": "https://techcrunch.com/2026/04/20/who-is-john-ternus-the-incoming-apple-ceo/",
+          "published_at": "2026-04-21T01:02:04Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "hackernews",
+          "title": "John Ternus to become Apple CEO",
+          "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+          "published_at": "2026-04-20T20:39:32Z",
+          "company": null,
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H13",
+      "title": "Jujutsu megamerges for fun and profit",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 77,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "hackernews",
+          "lobsters"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "hackernews",
+          "title": "Jujutsu megamerges for fun and profit",
+          "url": "https://isaaccorbrey.com/notes/jujutsu-megamerges-for-fun-and-profit",
+          "published_at": "2026-04-20T21:32:10Z",
+          "company": null,
+          "signal_level": "A"
         },
         {
           "platform": "lobsters",
-          "title": "Death of the IDE?",
-          "url": "https://lobste.rs/s/death-of-ide",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Anthropic Accidentally Exposes Claude Code Source via npm Source Map File",
-          "url": "https://feeds.arstechnica.com/arstechnica/index",
-          "published_at": "2026-04-07T00:00:00Z",
+          "title": "Jujutsu megamerges for fun and profit",
+          "url": "https://isaaccorbrey.com/notes/jujutsu-megamerges-for-fun-and-profit",
+          "published_at": "2026-04-20T22:08:39Z",
           "company": null,
           "signal_level": "B"
         }
       ]
     },
     {
-      "hotspot_id": "H02",
-      "title": "OpenAI 战略布局：AI 经济愿景、Stargate 安全与领导力危机",
-      "summary": "OpenAI AI 经济白皮书（公共财富基金、机器人税、四天工作周），Stargate 遭伊朗威胁，内部人士质疑 Altman。",
+      "hotspot_id": "H27",
+      "title": "Quantum Computers Are Not a Threat to 128-Bit Symmetric Keys",
+      "summary": "tracks=general",
       "category": "trend",
-      "overall_heat_score": 92,
+      "overall_heat_score": 77,
       "coverage": {
-        "source_count": 5,
-        "companies": [
-          "OpenAI"
-        ],
+        "source_count": 2,
+        "companies": [],
         "platforms": [
-          "openai",
-          "techcrunch",
-          "theverge",
-          "wired",
-          "hackernews"
+          "hackernews",
+          "lobsters"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "OpenAI S级官方发布",
-        "多源Stargate地缘风险",
-        "内部信任危机"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
-          "platform": "openai",
-          "title": "Announcing the OpenAI Safety Fellowship",
-          "url": "https://openai.com/news/rss.xml",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": "OpenAI",
-          "signal_level": "S"
-        },
-        {
-          "platform": "techcrunch",
-          "title": "OpenAI's vision for the AI economy: public wealth funds, robot taxes, and a four-day workweek",
-          "url": "https://techcrunch.com/feed/",
-          "published_at": "2026-04-07T00:00:00Z",
+          "platform": "hackernews",
+          "title": "Quantum Computers Are Not a Threat to 128-Bit Symmetric Keys",
+          "url": "https://words.filippo.io/128-bits/",
+          "published_at": "2026-04-20T16:37:48Z",
           "company": null,
           "signal_level": "A"
         },
         {
+          "platform": "lobsters",
+          "title": "Quantum Computers Are Not a Threat to 128-bit Symmetric Keys",
+          "url": "https://words.filippo.io/128-bits/",
+          "published_at": "2026-04-20T18:40:55Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H39",
+      "title": "ggsql: A Grammar of Graphics for SQL",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 77,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "hackernews",
+          "lobsters"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "hackernews",
+          "title": "ggsql: A Grammar of Graphics for SQL",
+          "url": "https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/",
+          "published_at": "2026-04-20T12:51:20Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "lobsters",
+          "title": "ggsql: A grammar of graphics for SQL",
+          "url": "https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/",
+          "published_at": "2026-04-20T15:32:47Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H01",
+      "title": "Changes to GitHub Copilot Individual plans",
+      "summary": "company=GitHub；tracks=devtools_release",
+      "category": "single",
+      "overall_heat_score": 75,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "GitHub"
+        ],
+        "platforms": [
+          "github-blog"
+        ]
+      },
+      "derived_tracks": [
+        "devtools_release"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "github-blog",
+          "title": "Changes to GitHub Copilot Individual plans",
+          "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
+          "published_at": "2026-04-20T18:15:28Z",
+          "company": "GitHub",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H02",
+      "title": "Highlights from Git 2.54",
+      "summary": "company=GitHub；tracks=devtools_release",
+      "category": "single",
+      "overall_heat_score": 75,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "GitHub"
+        ],
+        "platforms": [
+          "github-blog"
+        ]
+      },
+      "derived_tracks": [
+        "devtools_release"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "github-blog",
+          "title": "Highlights from Git 2.54",
+          "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
+          "published_at": "2026-04-20T16:43:57Z",
+          "company": "GitHub",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H67",
+      "title": "Apple CEO Tim Cook Is Stepping Down",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "theverge",
+          "wired"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
           "platform": "wired",
-          "title": "The problem is Sam Altman: OpenAI Insiders don't trust CEO",
-          "url": "https://www.wired.com/feed/rss",
-          "published_at": "2026-04-07T00:00:00Z",
+          "title": "Apple CEO Tim Cook Is Stepping Down",
+          "url": "https://www.wired.com/story/tim-cook-stepping-down-ceo-apple-john-ternus/",
+          "published_at": "2026-04-20T21:02:18Z",
           "company": null,
           "signal_level": "B"
         },
         {
           "platform": "theverge",
-          "title": "Iran threatens Stargate AI data centers",
-          "url": "https://www.theverge.com/rss/index.xml",
-          "published_at": "2026-04-07T00:00:00Z",
+          "title": "Apple CEO Tim Cook is stepping down",
+          "url": "https://www.theverge.com/tech/915213/tim-cook-apple-ceo-stepping-down-john-ternus",
+          "published_at": "2026-04-20T20:42:59Z",
           "company": null,
           "signal_level": "B"
         }
@@ -116,197 +256,41 @@
     },
     {
       "hotspot_id": "H03",
-      "title": "Artemis II 月球飞越：人类航天新纪录",
-      "summary": "Artemis II 宇航员完成人类史上最远地球距离纪录并飞越月球远侧。",
-      "category": "trend",
-      "overall_heat_score": 85,
-      "coverage": {
-        "source_count": 4,
-        "companies": [],
-        "platforms": [
-          "theverge",
-          "arstechnica",
-          "wired",
-          "techcrunch"
-        ]
-      },
-      "should_chase": "no",
-      "chase_rationale": [
-        "大众科技媒体集中报道"
-      ],
-      "samples": [
-        {
-          "platform": "theverge",
-          "title": "Artemis II: Everything We Know as Its Crew Approaches the Far Side of the Moon",
-          "url": "https://www.theverge.com/rss/index.xml",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Artemis II astronauts break a record, name a crater",
-          "url": "https://feeds.arstechnica.com/arstechnica/index",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "wired",
-          "title": "NASA Artemis II mission",
-          "url": "https://www.wired.com/feed/rss",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H04",
-      "title": "AI 机器人技术突破：GEN-1 可靠性 99%、机器人割草机与自动驾驶出租车",
-      "summary": "Physical AI 周：GEN-1 达到 99% 可靠性；NVIDIA National Robotics Week；机器人割草机商业化；自动驾驶出租车透明度受质疑。",
-      "category": "trend",
-      "overall_heat_score": 82,
-      "coverage": {
-        "source_count": 3,
-        "companies": [
-          "NVIDIA"
-        ],
-        "platforms": [
-          "nvidia",
-          "wired",
-          "theverge"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "NVIDIA A级 Physical AI 官方更新",
-        "GEN-1 99%可靠性里程碑"
-      ],
-      "samples": [
-        {
-          "platform": "nvidia",
-          "title": "National Robotics Week — Latest Physical AI Research, Breakthroughs and Resources",
-          "url": "https://blogs.nvidia.com/feed/",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": "NVIDIA",
-          "signal_level": "A"
-        },
-        {
-          "platform": "theverge",
-          "title": "From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability",
-          "url": "https://www.theverge.com/rss/index.xml",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "wired",
-          "title": "Robot Mowers Are Actually Good Now",
-          "url": "https://www.wired.com/feed/rss",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H05",
-      "title": "Anthropic 扩张：Google/Broadcom 算力合作与 Claude Code 源码意外曝光",
-      "summary": "Anthropic 与 Google、Broadcom 扩大下一代算力合作；Claude Code npm source map 意外公开部分源代码。",
+      "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
+      "summary": "company=Hugging Face；tracks=general",
       "category": "single",
-      "overall_heat_score": 88,
+      "overall_heat_score": 70,
       "coverage": {
-        "source_count": 2,
+        "source_count": 1,
         "companies": [
-          "Anthropic",
-          "Google",
-          "Broadcom"
+          "Hugging Face"
         ],
         "platforms": [
-          "techcrunch",
-          "arstechnica"
+          "huggingface"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "Anthropic S级战略动向",
-        "Claude Code源码曝光竞争情报"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
-          "platform": "techcrunch",
-          "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
-          "url": "https://techcrunch.com/feed/",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Anthropic Accidentally Exposes Claude Code Source via npm Source Map File",
-          "url": "https://feeds.arstechnica.com/arstechnica/index",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H06",
-      "title": "ChatGPT 第三方应用集成：DoorDash、Spotify、Uber 接入",
-      "summary": "ChatGPT app integrations 接入 DoorDash、Spotify、Uber，AI 助手向生活操作系统演进。",
-      "category": "trend",
-      "overall_heat_score": 80,
-      "coverage": {
-        "source_count": 3,
-        "companies": [
-          "OpenAI"
-        ],
-        "platforms": [
-          "theverge",
-          "hackernews",
-          "techcrunch"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "AI助手生态扩张里程碑",
-        "多源报道"
-      ],
-      "samples": [
-        {
-          "platform": "theverge",
-          "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
-          "url": "https://www.theverge.com/rss/index.xml",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "techcrunch",
-          "title": "How to use the new ChatGPT app integrations",
-          "url": "https://techcrunch.com/feed/",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "hackernews",
-          "title": "ChatGPT app integrations",
-          "url": "https://news.ycombinator.com/rss",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
+          "platform": "huggingface",
+          "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
+          "url": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+          "published_at": "2026-04-21T00:40:10Z",
+          "company": "Hugging Face",
           "signal_level": "A"
         }
       ]
     },
     {
-      "hotspot_id": "H07",
-      "title": "AWS DevOps AI Agent & Security Agent 正式发布",
-      "summary": "AWS DevOps Agent 与 Security Agent 正式 GA，含 Product Lifecycle 更新。",
+      "hotspot_id": "H16",
+      "title": "AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)",
+      "summary": "company=Amazon；tracks=general",
       "category": "single",
-      "overall_heat_score": 84,
+      "overall_heat_score": 70,
       "coverage": {
         "source_count": 1,
         "companies": [
@@ -316,74 +300,59 @@
           "aws-news"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "AWS A级官方公告，DevOps Agent GA 平台级里程碑"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
           "platform": "aws-news",
-          "title": "AWS Weekly Roundup: AWS DevOps Agent & Security Agent GA, Product Lifecycle updates, and more (April 6, 2026)",
-          "url": "https://aws.amazon.com/blogs/aws/feed/",
-          "published_at": "2026-04-06T00:00:00Z",
+          "title": "AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)",
+          "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/",
+          "published_at": "2026-04-20T15:53:21Z",
           "company": "Amazon",
           "signal_level": "A"
         }
       ]
     },
     {
-      "hotspot_id": "H08",
-      "title": "供应链安全警报：朝鲜 npm 包劫持与 BrowserStack 私钥泄露",
-      "summary": "朝鲜黑客提前数周策划劫持热门 npm 包；BrowserStack 本地代理泄露用户私钥及邮箱。",
-      "category": "trend",
-      "overall_heat_score": 81,
+      "hotspot_id": "H21",
+      "title": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
+      "summary": "company=NVIDIA；tracks=general",
+      "category": "single",
+      "overall_heat_score": 70,
       "coverage": {
-        "source_count": 3,
-        "companies": [],
+        "source_count": 1,
+        "companies": [
+          "NVIDIA"
+        ],
         "platforms": [
-          "wired",
-          "lobsters",
-          "arstechnica"
+          "nvidia"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "供应链攻击对npm生态直接风险",
-        "多安全事件同周爆发"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
-          "platform": "wired",
-          "title": "North Korea's hijack of one of the web's most used open source projects was likely weeks in the making",
-          "url": "https://www.wired.com/feed/rss",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "lobsters",
-          "title": "BrowserStack local leaking private key",
-          "url": "https://lobste.rs/s/browserstack-local-leaking-private-key",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Someone at BrowserStack is Leaking Users Email Address",
-          "url": "https://feeds.arstechnica.com/arstechnica/index",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
+          "platform": "nvidia",
+          "title": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
+          "url": "https://blogs.nvidia.com/blog/adobe-ai-agents-nvidia-wpp/",
+          "published_at": "2026-04-20T13:00:50Z",
+          "company": "NVIDIA",
+          "signal_level": "A"
         }
       ]
     },
     {
-      "hotspot_id": "H09",
-      "title": "Cloudflare Organizations：企业级多账户管理 GA",
-      "summary": "Cloudflare 发布 Organizations 功能，帮助企业统一管理 Cloudflare 资源。",
+      "hotspot_id": "H22",
+      "title": "Building the agentic cloud: everything we launched during Agents Week 2026",
+      "summary": "company=Cloudflare；tracks=general",
       "category": "single",
-      "overall_heat_score": 76,
+      "overall_heat_score": 70,
       "coverage": {
         "source_count": 1,
         "companies": [
@@ -393,144 +362,50 @@
           "cloudflare"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "Cloudflare A级官方发布"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
           "platform": "cloudflare",
-          "title": "How we built Organizations to help enterprises manage Cloudflare at scale",
-          "url": "https://blog.cloudflare.com/rss/",
-          "published_at": "2026-04-07T00:00:00Z",
+          "title": "Building the agentic cloud: everything we launched during Agents Week 2026",
+          "url": "https://blog.cloudflare.com/agents-week-in-review/",
+          "published_at": "2026-04-20T13:00:00Z",
           "company": "Cloudflare",
           "signal_level": "A"
         }
       ]
     },
     {
-      "hotspot_id": "H10",
-      "title": "AI 经济与就业：四天工作周、机器人税与小卖家的 AI 转型",
-      "summary": "AI 经济政策讨论：机器人税、公共财富基金；AI 对小企业主实际影响；媒体分析 AI 与工作关系。",
-      "category": "trend",
-      "overall_heat_score": 79,
-      "coverage": {
-        "source_count": 4,
-        "companies": [],
-        "platforms": [
-          "techcrunch",
-          "wired",
-          "mit-technology-review",
-          "devto"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "政策与现实双维度叙事",
-        "跨媒体多视角"
-      ],
-      "samples": [
-        {
-          "platform": "techcrunch",
-          "title": "OpenAI's vision for the AI economy: public wealth funds, robot taxes, and a four-day workweek",
-          "url": "https://techcrunch.com/feed/",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "wired",
-          "title": "AI is changing how small online sellers decide what to make",
-          "url": "https://www.wired.com/feed/rss",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "mit-technology-review",
-          "title": "The one piece of data that could actually shed light on your job and AI",
-          "url": "https://www.technologyreview.com/feed/",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H11",
-      "title": "量子计算时间线重估：密码学工程师视角",
-      "summary": "密码学工程师深度分析量子计算时间线，质疑主流乐观预期，提醒密码基础设施迁移窗口有限。",
-      "category": "trend",
-      "overall_heat_score": 74,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "arstechnica",
-          "lobsters"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "安全基础设施话题跨平台共振",
-        "密码学工程师一手观点"
-      ],
-      "samples": [
-        {
-          "platform": "arstechnica",
-          "title": "A cryptography engineer perspective on quantum computing timelines",
-          "url": "https://feeds.arstechnica.com/arstechnica/index",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "lobsters",
-          "title": "A Cryptography Engineer Perspective on Quantum Computing Timelines",
-          "url": "https://lobste.rs/s/quantum-cryptography",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H12",
-      "title": "Google 开源 Scion 多智能体编排测试床 & 离线 AI 听写应用",
-      "summary": "Google 开源实验性多智能体编排测试床 Scion；悄然上线可离线工作的 AI 听写应用。",
+      "hotspot_id": "H23",
+      "title": "The AI engineering stack we built internally — on the platform we ship",
+      "summary": "company=Cloudflare；tracks=general",
       "category": "single",
-      "overall_heat_score": 78,
+      "overall_heat_score": 70,
       "coverage": {
-        "source_count": 2,
+        "source_count": 1,
         "companies": [
-          "Google"
+          "Cloudflare"
         ],
         "platforms": [
-          "hackernews",
-          "theverge"
+          "cloudflare"
         ]
       },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "Google开源多智能体工具",
-        "离线AI预示端侧加速"
+      "derived_tracks": [
+        "general"
       ],
+      "should_chase": "yes",
+      "chase_rationale": [],
       "samples": [
         {
-          "platform": "hackernews",
-          "title": "Google Open Sources Experimental Multi-Agent Orchestration Testbed Scion",
-          "url": "https://news.ycombinator.com/rss",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
+          "platform": "cloudflare",
+          "title": "The AI engineering stack we built internally — on the platform we ship",
+          "url": "https://blog.cloudflare.com/internal-ai-engineering-stack/",
+          "published_at": "2026-04-20T13:00:00Z",
+          "company": "Cloudflare",
           "signal_level": "A"
-        },
-        {
-          "platform": "theverge",
-          "title": "Google quietly launched an AI dictation app that works offline",
-          "url": "https://www.theverge.com/rss/index.xml",
-          "published_at": "2026-04-07T00:00:00Z",
-          "company": null,
-          "signal_level": "B"
         }
       ]
     }

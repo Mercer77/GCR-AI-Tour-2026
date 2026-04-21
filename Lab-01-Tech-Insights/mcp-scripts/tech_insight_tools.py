@@ -819,11 +819,11 @@ def _fallback_cluster(items: list[dict[str, Any]], *, top_k: int) -> dict[str, A
         summary_bits: list[str] = []
         if companies:
             summary_bits.append(f"company={', '.join(companies[:3])}")
-        tracks = sorted(
+        derived_tracks = sorted(
             {t for x in c_items for t in (x.get("tracks") or []) if isinstance(t, str)}
         )
-        if tracks:
-            summary_bits.append(f"tracks={', '.join(tracks[:4])}")
+        if derived_tracks:
+            summary_bits.append(f"tracks={', '.join(derived_tracks[:4])}")
         summary = "；".join(summary_bits) or "自动聚类生成的主题。"
 
         samples = []
@@ -851,6 +851,7 @@ def _fallback_cluster(items: list[dict[str, Any]], *, top_k: int) -> dict[str, A
                     "companies": companies,
                     "platforms": platforms,
                 },
+                "derived_tracks": derived_tracks,
                 "should_chase": should_chase,
                 "chase_rationale": [],
                 "samples": samples,
@@ -953,24 +954,61 @@ def tech_insight_or_fallback(
         companies = companies_val if isinstance(companies_val, list) else []
         platforms_val = coverage.get("platforms")
         platforms = platforms_val if isinstance(platforms_val, list) else []
+        samples_val = h.get("samples")
+        samples = samples_val if isinstance(samples_val, list) else []
+        derived_tracks_val = h.get("derived_tracks")
+        derived_tracks = (
+            [str(x) for x in derived_tracks_val if isinstance(x, str) and x]
+            if isinstance(derived_tracks_val, list)
+            else []
+        )
 
-        what_changed = "".join(
-            [
-                f"过去 24 小时出现了与“{title}”相关的更新/讨论。",
-                f"来源覆盖 {len(platforms)} 个源" if platforms else "",
-            ]
-        ).strip()
-        why = "趋势" if category == "trend" else "重要更新"
-        why_it_matters = f"这是一条{why}信号，可能影响工程决策、工具链选择或研究方向。"
-        who = ["开发者", "技术管理者", "产品/平台团队"]
+        coverage_bits: list[str] = []
+        if platforms:
+            coverage_bits.append(f"覆盖 {len(platforms)} 个来源")
         if companies:
-            who.append("关注相关公司动态的人群")
-        next_actions = [
-            "查看引用链接确认原文",
-            "判断是否需要在团队内同步",
-            "如果涉及工具更新，评估升级/迁移成本",
-        ]
-        risk_notes = []
+            coverage_bits.append(f"涉及 {', '.join(companies[:3])}")
+        if derived_tracks:
+            coverage_bits.append(f"主题轨道为 {', '.join(derived_tracks[:3])}")
+
+        what_changed = f"过去 24 小时围绕“{title}”出现了新的更新与讨论"
+        if coverage_bits:
+            what_changed += "，" + "，".join(coverage_bits)
+        what_changed += "。"
+
+        if category == "trend":
+            why_it_matters = "这是一个跨来源共振的趋势信号，适合进入团队的持续跟踪清单。"
+        else:
+            why_it_matters = "这是一个高信号单点更新，虽然覆盖面较窄，但对技术选型或行业判断仍有参考价值。"
+
+        who = ["开发者", "技术管理者", "平台/基础设施团队"]
+        if companies:
+            who.append("关注相关公司生态的人群")
+        if "research" in derived_tracks:
+            who.append("研究与创新团队")
+
+        next_actions = ["查看样本链接确认原文", "判断是否需要团队内同步"]
+        if "devtools_release" in derived_tracks:
+            next_actions.append("评估升级、兼容性与落地成本")
+        elif category == "trend":
+            next_actions.append("继续观察后续 24-72 小时是否形成更强共振")
+        else:
+            next_actions.append("结合现有路线图判断是否需要提前响应")
+
+        risk_notes: list[str] = []
+        if category == "single" and len(platforms) <= 1:
+            risk_notes.append("当前主要来自单一来源，建议等待更多独立信号确认。")
+        if "research" in derived_tracks:
+            risk_notes.append("研究型信号到工程落地通常存在时间差。")
+
+        references = []
+        for sample in samples[:5]:
+            if not isinstance(sample, dict):
+                continue
+            url = str(sample.get("url") or "").strip()
+            if url:
+                references.append(url)
+
         insights.append(
             {
                 "hotspot_id": hid,
@@ -980,7 +1018,7 @@ def tech_insight_or_fallback(
                 "who_is_impacted": who,
                 "next_actions": next_actions,
                 "risk_notes": risk_notes,
-                "references": [],
+                "references": references,
             }
         )
 
@@ -1030,6 +1068,57 @@ def tech_render_report_or_fallback(
         if isinstance(h, dict) and str(h.get("category") or "") != "trend"
     ]
 
+    def _hotspot_tracks(h: dict[str, Any]) -> list[str]:
+        tracks_val = h.get("derived_tracks")
+        if isinstance(tracks_val, list):
+            tracks = [str(x) for x in tracks_val if isinstance(x, str) and x.strip()]
+            if tracks:
+                return sorted(set(tracks))
+
+        text_bits = [str(h.get("title") or ""), str(h.get("summary") or "")]
+        insight = by_id.get(str(h.get("hotspot_id") or "")) or {}
+        text_bits.append(str(insight.get("what_changed") or ""))
+        text_bits.append(str(insight.get("why_it_matters") or ""))
+        samples_val = h.get("samples")
+        samples = samples_val if isinstance(samples_val, list) else []
+        for sample in samples[:5]:
+            if isinstance(sample, dict):
+                text_bits.append(str(sample.get("title") or ""))
+        text = " ".join(text_bits).lower()
+
+        inferred: list[str] = []
+        if any(
+            token in text
+            for token in [
+                "copilot",
+                "cli",
+                "sdk",
+                "release",
+                "ga",
+                "devops",
+                "tool",
+                "agent",
+                "organizations",
+            ]
+        ):
+            inferred.append("devtools_release")
+        if any(
+            token in text
+            for token in [
+                "research",
+                "paper",
+                "quantum",
+                "robot",
+                "robotics",
+                "physical ai",
+                "safety",
+                "alignment",
+                "benchmark",
+            ]
+        ):
+            inferred.append("research")
+        return sorted(set(inferred))
+
     def _render_hotspot(h: dict[str, Any]) -> str:
         hid = str(h.get("hotspot_id") or "")
         title = str(h.get("title") or "")
@@ -1043,30 +1132,49 @@ def tech_render_report_or_fallback(
         samples_val = h.get("samples")
         samples = samples_val if isinstance(samples_val, list) else []
         insight = by_id.get(hid) or {}
+        next_actions_val = insight.get("next_actions")
+        next_actions = (
+            [str(x) for x in next_actions_val if isinstance(x, str) and x.strip()]
+            if isinstance(next_actions_val, list)
+            else []
+        )
+        who_val = insight.get("who_is_impacted")
+        who_is_impacted = (
+            [str(x) for x in who_val if isinstance(x, str) and x.strip()]
+            if isinstance(who_val, list)
+            else []
+        )
 
         lines: list[str] = []
         lines.append(f"### {hid} · {title}")
         if score:
-            lines.append(f"- Heat: {score}")
+            lines.append(f"- 热度：{score}")
+        lines.append(f"- 分类：{'跨源趋势' if str(h.get('category') or '') == 'trend' else '高信号单条'}")
         if companies:
-            lines.append(f"- Companies: {', '.join([str(x) for x in companies[:6]])}")
+            lines.append(f"- 相关公司：{', '.join([str(x) for x in companies[:6]])}")
         if platforms:
-            lines.append(f"- Sources: {', '.join([str(x) for x in platforms[:8]])}")
+            lines.append(f"- 来源：{', '.join([str(x) for x in platforms[:8]])}")
         what_changed = str(insight.get("what_changed") or "").strip()
         why_it_matters = str(insight.get("why_it_matters") or "").strip()
         if what_changed:
-            lines.append(f"- What changed: {what_changed}")
+            lines.append(f"- 发生了什么：{what_changed}")
         if why_it_matters:
-            lines.append(f"- Why it matters: {why_it_matters}")
+            lines.append(f"- 为什么重要：{why_it_matters}")
+        if who_is_impacted:
+            lines.append(f"- 影响谁：{', '.join(who_is_impacted[:6])}")
+        if next_actions:
+            lines.append("- 接下来怎么做：")
+            for action in next_actions[:4]:
+                lines.append(f"  - {action}")
         if samples:
-            lines.append("- References:")
+            lines.append("- 参考链接：")
             for s in samples[:5]:
                 if not isinstance(s, dict):
                     continue
                 t = str(s.get("title") or "").strip()
                 u = str(s.get("url") or "").strip()
                 if u:
-                    lines.append(f"  - {t} ({u})" if t else f"  - {u}")
+                    lines.append(f"  - [{t}]({u})" if t else f"  - {u}")
         lines.append("")
         return "\n".join(lines)
 
@@ -1084,11 +1192,39 @@ def tech_render_report_or_fallback(
                 continue
             company_radar.setdefault(c2, []).append(h)
 
+    devtools_releases = [
+        h for h in hotspots if isinstance(h, dict) and "devtools_release" in _hotspot_tracks(h)
+    ]
+    research_watch = [
+        h for h in hotspots if isinstance(h, dict) and "research" in _hotspot_tracks(h)
+    ]
+
     lines: list[str] = []
-    lines.append("# Tech Insight Report (fallback)\n")
-    lines.append(f"- Generated at: {_to_iso(_utc_now())}")
-    lines.append("- Window: last 24h")
+    lines.append("# Tech Insight 日报（本地兜底版）\n")
+    lines.append(f"> 生成时间：{_to_iso(_utc_now())}")
+    lines.append(f"> 热点总数：{len(hotspots)}")
+    lines.append(
+        f"> 趋势 {len(trends)} 个，高信号单条 {len(singles)} 个"
+    )
     lines.append("")
+
+    lines.append("## 24h 摘要\n")
+    if not hotspots:
+        lines.append("当前没有可汇总的热点。\n")
+    else:
+        lines.append(
+            f"本次本地运行共识别 **{len(hotspots)} 个热点**，其中跨源趋势 **{len(trends)} 个**，高信号单条更新 **{len(singles)} 个**。"
+        )
+        lines.append("")
+        lines.append("| 排名 | 热度 | 标题 | 分类 |")
+        lines.append("|------|------|------|------|")
+        for idx, h in enumerate(hotspots[: min(8, len(hotspots))], start=1):
+            if not isinstance(h, dict):
+                continue
+            lines.append(
+                f"| {idx} | {int(h.get('overall_heat_score') or 0)} | {str(h.get('title') or '')} | {str(h.get('category') or '')} |"
+            )
+        lines.append("")
 
     lines.append("## Cross-source Trends\n")
     if not trends:
@@ -1115,8 +1251,26 @@ def tech_render_report_or_fallback(
             )[:6]:
                 hid = str(h.get("hotspot_id") or "")
                 title = str(h.get("title") or "")
+                insight = by_id.get(hid) or {}
+                why_it_matters = str(insight.get("why_it_matters") or "").strip()
                 lines.append(f"- {hid}: {title}")
+                if why_it_matters:
+                    lines.append(f"  - {why_it_matters}")
             lines.append("")
+
+    lines.append("## DevTools Releases\n")
+    if not devtools_releases:
+        lines.append("(no devtools-focused updates extracted)\n")
+    else:
+        for h in devtools_releases[:6]:
+            lines.append(_render_hotspot(h))
+
+    lines.append("## Research Watch\n")
+    if not research_watch:
+        lines.append("(no research-focused updates extracted)\n")
+    else:
+        for h in research_watch[:6]:
+            lines.append(_render_hotspot(h))
 
     lines.append("---\n")
     lines.append("说明：本报告在无 LLM 或 LLM 输出不可解析时，由确定性兜底逻辑生成。\n")
