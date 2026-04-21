@@ -35,6 +35,7 @@ network:
     - "www.infoq.com"
     - "lobste.rs"
     - "dev.to"
+    - "news.google.com"
 safe-outputs:
   create-pull-request:
     title-prefix: "[tech-insight] "
@@ -177,10 +178,10 @@ mcp-scripts:
 
 默认配置如下：
 
-- `source_list_path`: `Lab-01-Tech-Insights/input/api/rss_list.json`
+- `source_list_path`: `Lab-01-Tech-Insights/input/api/textile_rss_list.json`
 - `signals_dir`: `Lab-01-Tech-Insights/output/signals`
 - `output_dir`: `Lab-01-Tech-Insights/output`
-- `time_window_hours`: `24`
+- `time_window_hours`: `168`
 - `top_k`: `12`
 - `max_items_per_source`: `25`
 - `timeout_seconds`: `15`
