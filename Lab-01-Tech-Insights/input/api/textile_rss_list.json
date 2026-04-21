@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Google News - 纺织行业热点",
+    "platform": "google-news-textile-zh",
+    "source": "rss",
+    "url": "https://news.google.com/rss/search?q=%E7%BA%BA%E7%BB%87%20when%3A7d&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+    "signal_level": "S",
+    "include_keywords": ["纺织", "面料", "纱线", "棉花", "化纤"]
+  },
+  {
+    "id": 2,
+    "name": "Google News - Textile Industry",
+    "platform": "google-news-textile-en",
+    "source": "rss",
+    "url": "https://news.google.com/rss/search?q=textile%20industry%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "signal_level": "A",
+    "include_keywords": ["textile", "fabric", "yarn", "mill", "spinning"]
+  },
+  {
+    "id": 3,
+    "name": "Google News - Sustainable Textile",
+    "platform": "google-news-sustainable-textile",
+    "source": "rss",
+    "url": "https://news.google.com/rss/search?q=sustainable%20textile%20when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+    "signal_level": "A",
+    "include_keywords": ["sustainable", "recycled fiber", "circular textile", "carbon"]
+  },
+  {
+    "id": 4,
+    "name": "Google News - Cotton Market",
+    "platform": "google-news-cotton-market",
+    "source": "rss",
+    "url": "https://news.google.com/rss/search?q=cotton%20market%20when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+    "signal_level": "A",
+    "include_keywords": ["cotton", "cotlook", "price", "commodity"]
+  },
+  {
+    "id": 5,
+    "name": "Google News - Textile Machinery",
+    "platform": "google-news-textile-machinery",
+    "source": "rss",
+    "url": "https://news.google.com/rss/search?q=textile%20machinery%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+    "signal_level": "B",
+    "include_keywords": ["loom", "weaving", "knitting", "automation", "factory"]
+  },
+  {
+    "id": 6,
+    "name": "Google News - Garment Manufacturing",
+    "platform": "google-news-garment-manufacturing",
+    "source": "rss",
+    "url": "https://news.google.com/rss/search?q=garment%20manufacturing%20when%3A14d&hl=en-US&gl=US&ceid=US%3Aen",
+    "signal_level": "B",
+    "include_keywords": ["garment", "apparel", "supply chain", "factory"]
+  }
+]

@@ -3,8 +3,8 @@
   "top_k": 12,
   "hotspots": [
     {
-      "hotspot_id": "H09",
-      "title": "Who is John Ternus, the incoming Apple CEO?",
+      "hotspot_id": "H33",
+      "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
       "summary": "tracks=general",
       "category": "trend",
       "overall_heat_score": 77,
@@ -12,8 +12,8 @@
         "source_count": 2,
         "companies": [],
         "platforms": [
-          "hackernews",
-          "techcrunch"
+          "google-news-garment-manufacturing",
+          "google-news-textile-en"
         ]
       },
       "derived_tracks": [
@@ -23,64 +23,26 @@
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "techcrunch",
-          "title": "Who is John Ternus, the incoming Apple CEO?",
-          "url": "https://techcrunch.com/2026/04/20/who-is-john-ternus-the-incoming-apple-ceo/",
-          "published_at": "2026-04-21T01:02:04Z",
+          "platform": "google-news-textile-en",
+          "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1hRcHlSQ2JXNUdFb1VNRHRYNlNGcDcybmpiZGhoVzNKUW9MVVRCYUJFNUhnMXNhYzN1dTFkZUlNbEpKWGpteTN1cFgxRl9lZGlHY3lYQ0M5REdOeWhuSTNlQ0RtY2tVcHVuMjBIVFlHdF9xY1IwS2Y5UE45LTl1WE9Ec2Nsb0tidXhuWHphLU5EUlNlazZrRERWZWctRXlJN2dBUVhJMzBKd2ZDajFoWllvcw?oc=5",
+          "published_at": "2026-04-20T20:28:45Z",
           "company": null,
           "signal_level": "A"
         },
         {
-          "platform": "hackernews",
-          "title": "John Ternus to become Apple CEO",
-          "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
-          "published_at": "2026-04-20T20:39:32Z",
-          "company": null,
-          "signal_level": "A"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H13",
-      "title": "Jujutsu megamerges for fun and profit",
-      "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 77,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "hackernews",
-          "lobsters"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "hackernews",
-          "title": "Jujutsu megamerges for fun and profit",
-          "url": "https://isaaccorbrey.com/notes/jujutsu-megamerges-for-fun-and-profit",
-          "published_at": "2026-04-20T21:32:10Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "lobsters",
-          "title": "Jujutsu megamerges for fun and profit",
-          "url": "https://isaaccorbrey.com/notes/jujutsu-megamerges-for-fun-and-profit",
-          "published_at": "2026-04-20T22:08:39Z",
+          "platform": "google-news-garment-manufacturing",
+          "title": "NYC Backs Garment Sector With $1.7 Million Local Production Fund - WWD",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1hRcHlSQ2JXNUdFb1VNRHRYNlNGcDcybmpiZGhoVzNKUW9MVVRCYUJFNUhnMXNhYzN1dTFkZUlNbEpKWGpteTN1cFgxRl9lZGlHY3lYQ0M5REdOeWhuSTNlQ0RtY2tVcHVuMjBIVFlHdF9xY1IwS2Y5UE45LTl1WE9Ec2Nsb0tidXhuWHphLU5EUlNlazZrRERWZWctRXlJN2dBUVhJMzBKd2ZDajFoWllvcw?oc=5",
+          "published_at": "2026-04-20T20:28:45Z",
           "company": null,
           "signal_level": "B"
         }
       ]
     },
     {
-      "hotspot_id": "H27",
-      "title": "Quantum Computers Are Not a Threat to 128-Bit Symmetric Keys",
+      "hotspot_id": "H38",
+      "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
       "summary": "tracks=general",
       "category": "trend",
       "overall_heat_score": 77,
@@ -88,8 +50,8 @@
         "source_count": 2,
         "companies": [],
         "platforms": [
-          "hackernews",
-          "lobsters"
+          "google-news-garment-manufacturing",
+          "google-news-textile-en"
         ]
       },
       "derived_tracks": [
@@ -99,26 +61,26 @@
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "hackernews",
-          "title": "Quantum Computers Are Not a Threat to 128-Bit Symmetric Keys",
-          "url": "https://words.filippo.io/128-bits/",
-          "published_at": "2026-04-20T16:37:48Z",
+          "platform": "google-news-textile-en",
+          "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vWEtpZE45Tk9xTzJ5b3padzNybDNMT1FaX0oySWxkTnFicFQ3cnRWVXBVQy1ZQ3dLVTFuTnJKTkVYWXE5TU85b2ZkRmc5ZGV1U3NkNk9BT0dCS3pLaGtoRVJ3?oc=5",
+          "published_at": "2026-04-20T12:07:52Z",
           "company": null,
           "signal_level": "A"
         },
         {
-          "platform": "lobsters",
-          "title": "Quantum Computers Are Not a Threat to 128-bit Symmetric Keys",
-          "url": "https://words.filippo.io/128-bits/",
-          "published_at": "2026-04-20T18:40:55Z",
+          "platform": "google-news-garment-manufacturing",
+          "title": "Textile Yarn Market Report: USD 20.3 billion by 2034 at 4.7% CAGR - Market.us",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1vWEtpZE45Tk9xTzJ5b3padzNybDNMT1FaX0oySWxkTnFicFQ3cnRWVXBVQy1ZQ3dLVTFuTnJKTkVYWXE5TU85b2ZkRmc5ZGV1U3NkNk9BT0dCS3pLaGtoRVJ3?oc=5",
+          "published_at": "2026-04-20T12:07:52Z",
           "company": null,
           "signal_level": "B"
         }
       ]
     },
     {
-      "hotspot_id": "H39",
-      "title": "ggsql: A Grammar of Graphics for SQL",
+      "hotspot_id": "H41",
+      "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
       "summary": "tracks=general",
       "category": "trend",
       "overall_heat_score": 77,
@@ -126,8 +88,8 @@
         "source_count": 2,
         "companies": [],
         "platforms": [
-          "hackernews",
-          "lobsters"
+          "google-news-cotton-market",
+          "google-news-textile-machinery"
         ]
       },
       "derived_tracks": [
@@ -137,18 +99,170 @@
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "hackernews",
-          "title": "ggsql: A Grammar of Graphics for SQL",
-          "url": "https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/",
-          "published_at": "2026-04-20T12:51:20Z",
+          "platform": "google-news-cotton-market",
+          "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRwY0kxTUxTTEFjLVU1ZXBKM2oyX2FOYTlLN2dfV2lYMml3RWt2MGtiaE04emQ0dV9sekd4YWlVb3VZbklHa0taclFqNHh4RzVpc0s2cEcwSXJsaHM5VFNBUkZ3aUY4aGVlUDRSNXVuXzNJMHR6UURfMTVueng4YkJrWUNSNTFodERkOEJ6XzlpYlRVQXNaR1FzY3dxcERo?oc=5",
+          "published_at": "2026-04-20T07:28:35Z",
           "company": null,
           "signal_level": "A"
         },
         {
-          "platform": "lobsters",
-          "title": "ggsql: A grammar of graphics for SQL",
-          "url": "https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/",
-          "published_at": "2026-04-20T15:32:47Z",
+          "platform": "google-news-textile-machinery",
+          "title": "Cotton Spinning Machinery Market Set to Reach US$ 5.0 Bn by 2033, Says Persistence Market Research - openPR.com",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSjRwY0kxTUxTTEFjLVU1ZXBKM2oyX2FOYTlLN2dfV2lYMml3RWt2MGtiaE04emQ0dV9sekd4YWlVb3VZbklHa0taclFqNHh4RzVpc0s2cEcwSXJsaHM5VFNBUkZ3aUY4aGVlUDRSNXVuXzNJMHR6UURfMTVueng4YkJrWUNSNTFodERkOEJ6XzlpYlRVQXNaR1FzY3dxcERo?oc=5",
+          "published_at": "2026-04-20T07:28:35Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H49",
+      "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 77,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-textile-en",
+          "google-news-textile-machinery"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "google-news-textile-en",
+          "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUl92WW1feTZwc3k2dWlQcnZpcnZiRi0zWEUtSkRGSnh5dk4yTzllRURxVWNpX3ZGcEk1WXk4TmVTSTN0VzUxdmZLNEE5WFhoSno4Z1ZGbkxoZGVxMmM2V3JTQzN3UVNLTzkta2pJRkNHb0FGM0txM2FRSmtSaEVoVUk4UGJHWkxPQUYteW1Kb01qU3RZTlY0UGY5Mk1IeENuZGV6Y0JsbE9hM2VsMzhrek9IQVg4czBrVC1hQXZkMUJFaWxLVHJaMS13eTFnZGNwckpQNnR3?oc=5",
+          "published_at": "2026-04-18T01:46:05Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-machinery",
+          "title": "Textile Waste Recycling Machine Market Forecast Points Higher Toward 2035, Driven by Circular Economy Mandates - IndexBox",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUl92WW1feTZwc3k2dWlQcnZpcnZiRi0zWEUtSkRGSnh5dk4yTzllRURxVWNpX3ZGcEk1WXk4TmVTSTN0VzUxdmZLNEE5WFhoSno4Z1ZGbkxoZGVxMmM2V3JTQzN3UVNLTzkta2pJRkNHb0FGM0txM2FRSmtSaEVoVUk4UGJHWkxPQUYteW1Kb01qU3RZTlY0UGY5Mk1IeENuZGV6Y0JsbE9hM2VsMzhrek9IQVg4czBrVC1hQXZkMUJFaWxLVHJaMS13eTFnZGNwckpQNnR3?oc=5",
+          "published_at": "2026-04-18T01:46:05Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H53",
+      "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 77,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-garment-manufacturing",
+          "google-news-textile-en"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "google-news-textile-en",
+          "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm1xVjA0VEN3RENmSHdQTDdqU0RmX1E2N3RvU2daVU15dTJzOWtLR1BVeUplZTBZUnNDa3BISkI0TUYyLVU0OWhCelJzX2tLT1ZLS18ySlRtMkllc19HNktodU50UnRhRDJ2NGhuc1dGNjk4NG5FTDBDbU9leWp1Tnc0bzZPNW5OUVNBLWcxdkN3V0dnQUdtYWJ3WVpuT2dz?oc=5",
+          "published_at": "2026-04-17T20:43:25Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-garment-manufacturing",
+          "title": "Europe ‘Losing’ Textile Industry, Trade Group Warns - WWD",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSm1xVjA0VEN3RENmSHdQTDdqU0RmX1E2N3RvU2daVU15dTJzOWtLR1BVeUplZTBZUnNDa3BISkI0TUYyLVU0OWhCelJzX2tLT1ZLS18ySlRtMkllc19HNktodU50UnRhRDJ2NGhuc1dGNjk4NG5FTDBDbU9leWp1Tnc0bzZPNW5OUVNBLWcxdkN3V0dnQUdtYWJ3WVpuT2dz?oc=5",
+          "published_at": "2026-04-17T20:43:25Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H59",
+      "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 77,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-textile-en",
+          "google-news-textile-machinery"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "google-news-textile-en",
+          "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTy04S3Q1Z2hOc3haWjRscDFHZThsUFhWbHduSVJJdjlPaFR5aEtobkR5Zkx5ZG51MHhzZUxwRlVwYVVvdHNKVUtpY2VCY1dMZlZ4N0ZETkJGRy0yc2pTM00tdU5RZEQxZDMtbTE5MzNmOXhBblgtT3NYMXI0UDQtVlloRGVaYUNSX2NrV2k5dW5ZTEx0R25YeWIyRTI1YXpyWXpFRlhSLUNIdEhrMExaYjd5NXYzV0lDU0lKYg?oc=5",
+          "published_at": "2026-04-17T12:30:47Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-machinery",
+          "title": "VDMA Members At Techtextil: Smart Technologies For Technical Textiles - Textile World",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTy04S3Q1Z2hOc3haWjRscDFHZThsUFhWbHduSVJJdjlPaFR5aEtobkR5Zkx5ZG51MHhzZUxwRlVwYVVvdHNKVUtpY2VCY1dMZlZ4N0ZETkJGRy0yc2pTM00tdU5RZEQxZDMtbTE5MzNmOXhBblgtT3NYMXI0UDQtVlloRGVaYUNSX2NrV2k5dW5ZTEx0R25YeWIyRTI1YXpyWXpFRlhSLUNIdEhrMExaYjd5NXYzV0lDU0lKYg?oc=5",
+          "published_at": "2026-04-17T12:30:47Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H74",
+      "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - PR Newswire",
+      "summary": "tracks=general",
+      "category": "trend",
+      "overall_heat_score": 77,
+      "coverage": {
+        "source_count": 2,
+        "companies": [],
+        "platforms": [
+          "google-news-textile-en",
+          "google-news-textile-machinery"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
+        {
+          "platform": "google-news-textile-en",
+          "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - PR Newswire",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxONGd5NzlweUhKZURuWmowNExaaWJBVDlJS0R4bk83WDZpTk4xNk1Qam8wUzZGQ3lFRUJSN3EteWhfZnl0UWxnNTE4dzFqWUdCUkpmQVFycnkza0hJdl96RUNUVmxjYWpqMHVWYUZQY2QzMF9GN3JmVHJCUjRDTi1xV3Znc01KTGFIWFd6bnJNOE9pbGk0bmdtZ1p3X1BMRnRqRFQ1aUxtZEgxYWpkanoyWW5XWHhpdV9jcGJUMHhqd1ladFhnNHFqS2NVcl91VjNCbXFWWFkxYXNoYXM0TTdLRmFRUUU4VXhJWVFfWE5CanF4MTBQRXlxUmtNdFIyMUhpSkFqMTB2REFUUQ?oc=5",
+          "published_at": "2026-04-16T07:27:00Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "google-news-textile-machinery",
+          "title": "XTransfer Showcases Seamless Cross-Border Payment Solutions at INDO INTERTEX & INATEX 2026 to Empower the Textile SMEs - TNGlobal",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTElwQ2gyNVQtTXozQnp0T3JIaFZEbVVCWjZtc1dSY1c4ZGFQT1BxSGpjQjc0eVNURmR5T0JGUXR3V3JkdXA5RlM2Y2VnQTNHMGRMOFl1aHBQNG1uNUxpNW1TX2pMa29jUVRmVUtuMU9nbURvSkZBRF9GTWl2Y0ZwcUpIdkd2V1lqNVpUV0hpdmp1WnQ3LTU4Mkc4cXB2MEdrR2JEZFZMR29qNl9EMS11a0RkQWVqTUc1NHlocFRlWmI3SVFhdDJ5eTRzc3p2bE1CbTYwUnRWXzFhaUdqR05NNXV5cw?oc=5",
+          "published_at": "2026-04-16T08:54:45Z",
           "company": null,
           "signal_level": "B"
         }
@@ -156,78 +270,73 @@
     },
     {
       "hotspot_id": "H01",
-      "title": "Changes to GitHub Copilot Individual plans",
-      "summary": "company=GitHub；tracks=devtools_release",
+      "title": "中国新闻网：2026年武汉纺织大学时装周启幕 - wuhan.gov.cn",
+      "summary": "tracks=general",
       "category": "single",
-      "overall_heat_score": 75,
+      "overall_heat_score": 70,
       "coverage": {
         "source_count": 1,
-        "companies": [
-          "GitHub"
-        ],
+        "companies": [],
         "platforms": [
-          "github-blog"
+          "google-news-textile-zh"
         ]
       },
       "derived_tracks": [
-        "devtools_release"
+        "general"
       ],
       "should_chase": "yes",
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "github-blog",
-          "title": "Changes to GitHub Copilot Individual plans",
-          "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
-          "published_at": "2026-04-20T18:15:28Z",
-          "company": "GitHub",
+          "platform": "google-news-textile-zh",
+          "title": "中国新闻网：2026年武汉纺织大学时装周启幕 - wuhan.gov.cn",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPMHRvRFFOaGlYZFRzN3B5akY2NzJFUU9pRVViQnpsVXhHcFdQaTRpeVhfNVc4NlozWjBhdFYwa3IwVVROd2NNc2Z5RVBram12MDRjSHRucVNIY2x0MUFlLWFwSmU0dTlxWnFxNE9TRQ?oc=5",
+          "published_at": "2026-04-21T01:13:00Z",
+          "company": null,
           "signal_level": "S"
         }
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "Highlights from Git 2.54",
-      "summary": "company=GitHub；tracks=devtools_release",
+      "title": "“我们的时代”——武汉纺织大学2026年时装周盛大启幕 - 武汉纺织大学",
+      "summary": "tracks=general",
       "category": "single",
-      "overall_heat_score": 75,
+      "overall_heat_score": 70,
       "coverage": {
         "source_count": 1,
-        "companies": [
-          "GitHub"
-        ],
+        "companies": [],
         "platforms": [
-          "github-blog"
+          "google-news-textile-zh"
         ]
       },
       "derived_tracks": [
-        "devtools_release"
+        "general"
       ],
       "should_chase": "yes",
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "github-blog",
-          "title": "Highlights from Git 2.54",
-          "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
-          "published_at": "2026-04-20T16:43:57Z",
-          "company": "GitHub",
+          "platform": "google-news-textile-zh",
+          "title": "“我们的时代”——武汉纺织大学2026年时装周盛大启幕 - 武汉纺织大学",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CVnVvTTlkQ3FoYlZWTHNHTER3MFJJOFJEVmE1NTJ6eTJRaU5wbkI3WWJaOFZSeGhIVVlqckszWjZaZWpDR0l2Z0d0dGdGa0pEVDd0eFJnbw?oc=5",
+          "published_at": "2026-04-21T00:22:06Z",
+          "company": null,
           "signal_level": "S"
         }
       ]
     },
     {
-      "hotspot_id": "H67",
-      "title": "Apple CEO Tim Cook Is Stepping Down",
+      "hotspot_id": "H03",
+      "title": "2026年武汉纺织大学时装周创意集市开市，37个学生摊位演绎“我们的时代” - 武汉纺织大学",
       "summary": "tracks=general",
-      "category": "trend",
-      "overall_heat_score": 72,
+      "category": "single",
+      "overall_heat_score": 70,
       "coverage": {
-        "source_count": 2,
+        "source_count": 1,
         "companies": [],
         "platforms": [
-          "theverge",
-          "wired"
+          "google-news-textile-zh"
         ]
       },
       "derived_tracks": [
@@ -237,36 +346,55 @@
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "wired",
-          "title": "Apple CEO Tim Cook Is Stepping Down",
-          "url": "https://www.wired.com/story/tim-cook-stepping-down-ceo-apple-john-ternus/",
-          "published_at": "2026-04-20T21:02:18Z",
+          "platform": "google-news-textile-zh",
+          "title": "2026年武汉纺织大学时装周创意集市开市，37个学生摊位演绎“我们的时代” - 武汉纺织大学",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9MS0dkTXYxbnV3TjJxN3d4Zmw5b2Zfbkdqb2xKcm95eHdHdjBKN2t1OXExbkF4Tmg3RVhkc0s3cjhUeElYYVk2dUlQZmF1ZERqOHJxM0lIOA?oc=5",
+          "published_at": "2026-04-21T00:22:06Z",
           "company": null,
-          "signal_level": "B"
-        },
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H04",
+      "title": "武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团",
+      "summary": "tracks=general",
+      "category": "single",
+      "overall_heat_score": 70,
+      "coverage": {
+        "source_count": 1,
+        "companies": [],
+        "platforms": [
+          "google-news-textile-zh"
+        ]
+      },
+      "derived_tracks": [
+        "general"
+      ],
+      "should_chase": "yes",
+      "chase_rationale": [],
+      "samples": [
         {
-          "platform": "theverge",
-          "title": "Apple CEO Tim Cook is stepping down",
-          "url": "https://www.theverge.com/tech/915213/tim-cook-apple-ceo-stepping-down-john-ternus",
-          "published_at": "2026-04-20T20:42:59Z",
+          "platform": "google-news-textile-zh",
+          "title": "武汉纺织大学2026年时装周启幕869套原创设计作品尽显时尚自信- 湖北日报新闻客户端 - 湖北日报传媒集团",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKVEpESDRTOWZ2QlE3WFV2TUxmZ1oycmEyaHlheXVLcklXSzNncS1LU3h4RXM4c3Z0NFNSSjBQVE5ocXZvUjJqWTFUR1ZKUlpTS3RNRVdBQzk?oc=5",
+          "published_at": "2026-04-20T14:10:41Z",
           "company": null,
-          "signal_level": "B"
+          "signal_level": "S"
         }
       ]
     },
     {
-      "hotspot_id": "H03",
-      "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
-      "summary": "company=Hugging Face；tracks=general",
+      "hotspot_id": "H05",
+      "title": "【调研快报】深纺织A接待线上参与公司2025年度网上业绩说明会的投资者调研 - 东方财富",
+      "summary": "tracks=general",
       "category": "single",
       "overall_heat_score": 70,
       "coverage": {
         "source_count": 1,
-        "companies": [
-          "Hugging Face"
-        ],
+        "companies": [],
         "platforms": [
-          "huggingface"
+          "google-news-textile-zh"
         ]
       },
       "derived_tracks": [
@@ -276,136 +404,12 @@
       "chase_rationale": [],
       "samples": [
         {
-          "platform": "huggingface",
-          "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
-          "url": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
-          "published_at": "2026-04-21T00:40:10Z",
-          "company": "Hugging Face",
-          "signal_level": "A"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H16",
-      "title": "AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)",
-      "summary": "company=Amazon；tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
-      "coverage": {
-        "source_count": 1,
-        "companies": [
-          "Amazon"
-        ],
-        "platforms": [
-          "aws-news"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "aws-news",
-          "title": "AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)",
-          "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/",
-          "published_at": "2026-04-20T15:53:21Z",
-          "company": "Amazon",
-          "signal_level": "A"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H21",
-      "title": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
-      "summary": "company=NVIDIA；tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
-      "coverage": {
-        "source_count": 1,
-        "companies": [
-          "NVIDIA"
-        ],
-        "platforms": [
-          "nvidia"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "nvidia",
-          "title": "Autonomous AI at Scale: Adobe Agents Unlock Breakthrough Creative Intelligence With NVIDIA and WPP",
-          "url": "https://blogs.nvidia.com/blog/adobe-ai-agents-nvidia-wpp/",
-          "published_at": "2026-04-20T13:00:50Z",
-          "company": "NVIDIA",
-          "signal_level": "A"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H22",
-      "title": "Building the agentic cloud: everything we launched during Agents Week 2026",
-      "summary": "company=Cloudflare；tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
-      "coverage": {
-        "source_count": 1,
-        "companies": [
-          "Cloudflare"
-        ],
-        "platforms": [
-          "cloudflare"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "cloudflare",
-          "title": "Building the agentic cloud: everything we launched during Agents Week 2026",
-          "url": "https://blog.cloudflare.com/agents-week-in-review/",
-          "published_at": "2026-04-20T13:00:00Z",
-          "company": "Cloudflare",
-          "signal_level": "A"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H23",
-      "title": "The AI engineering stack we built internally — on the platform we ship",
-      "summary": "company=Cloudflare；tracks=general",
-      "category": "single",
-      "overall_heat_score": 70,
-      "coverage": {
-        "source_count": 1,
-        "companies": [
-          "Cloudflare"
-        ],
-        "platforms": [
-          "cloudflare"
-        ]
-      },
-      "derived_tracks": [
-        "general"
-      ],
-      "should_chase": "yes",
-      "chase_rationale": [],
-      "samples": [
-        {
-          "platform": "cloudflare",
-          "title": "The AI engineering stack we built internally — on the platform we ship",
-          "url": "https://blog.cloudflare.com/internal-ai-engineering-stack/",
-          "published_at": "2026-04-20T13:00:00Z",
-          "company": "Cloudflare",
-          "signal_level": "A"
+          "platform": "google-news-textile-zh",
+          "title": "【调研快报】深纺织A接待线上参与公司2025年度网上业绩说明会的投资者调研 - 东方财富",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KTnRseXgzS0JoY2pISE1pTFAxTDRwMlp0MlhKM3l6NXAtbnE2NS16NGw3c0hlOXNhVUFiWWFxR29qWmUzV3RjYkg4cHhoR2NkWHpNUUpqbzVlaERacFJMYg?oc=5",
+          "published_at": "2026-04-20T11:35:28Z",
+          "company": null,
+          "signal_level": "S"
         }
       ]
     }
